@@ -36,6 +36,8 @@ namespace Matrix
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            loadForm(new Dashboard());
+            //DashboardButton.ActiveControl =true;
         }
 
         private void DashboardButton_Click(object sender, EventArgs e)
@@ -76,6 +78,11 @@ namespace Matrix
         private void MinimizeAppButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void PaymentButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Payment());
         }
     }
 }
