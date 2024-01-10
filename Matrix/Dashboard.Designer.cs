@@ -62,7 +62,7 @@
             this.ExpiringDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiredDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.DuesDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ExpiringLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -96,6 +96,7 @@
             this.DuesFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiredFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiringFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ExpiringBox = new System.Windows.Forms.NumericUpDown();
             this.bunifuShadowPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.bunifuShadowPanel3.SuspendLayout();
@@ -115,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -449,21 +451,21 @@
             this.DuesDataGrid.TabIndex = 2;
             this.DuesDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             // 
-            // bunifuLabel1
+            // ExpiringLabel
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(415, 5);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(208, 25);
-            this.bunifuLabel1.TabIndex = 3;
-            this.bunifuLabel1.Text = "Members Expiring in 7 days";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.ExpiringLabel.AllowParentOverrides = false;
+            this.ExpiringLabel.AutoEllipsis = false;
+            this.ExpiringLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ExpiringLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.ExpiringLabel.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.ExpiringLabel.Location = new System.Drawing.Point(415, 5);
+            this.ExpiringLabel.Name = "ExpiringLabel";
+            this.ExpiringLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ExpiringLabel.Size = new System.Drawing.Size(208, 25);
+            this.ExpiringLabel.TabIndex = 3;
+            this.ExpiringLabel.Text = "Members Expiring in 7 days";
+            this.ExpiringLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ExpiringLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
@@ -1055,7 +1057,7 @@
             this.FullDataPanel.Controls.Add(this.DuesFDataGrid);
             this.FullDataPanel.Controls.Add(this.ExpiredFDataGrid);
             this.FullDataPanel.Controls.Add(this.ExpiringFDataGrid);
-            this.FullDataPanel.Location = new System.Drawing.Point(4, 5);
+            this.FullDataPanel.Location = new System.Drawing.Point(2, 69);
             this.FullDataPanel.Name = "FullDataPanel";
             this.FullDataPanel.ShowBorders = true;
             this.FullDataPanel.Size = new System.Drawing.Size(776, 654);
@@ -1419,18 +1421,28 @@
             this.ExpiringFDataGrid.TabIndex = 15;
             this.ExpiringFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             // 
+            // ExpiringBox
+            // 
+            this.ExpiringBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpiringBox.Location = new System.Drawing.Point(664, 5);
+            this.ExpiringBox.Name = "ExpiringBox";
+            this.ExpiringBox.Size = new System.Drawing.Size(110, 25);
+            this.ExpiringBox.TabIndex = 6;
+            this.ExpiringBox.ValueChanged += new System.EventHandler(this.Expiring_ValueChanged);
+            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(790, 665);
+            this.Controls.Add(this.ExpiringBox);
             this.Controls.Add(this.FullDataPanel);
             this.Controls.Add(this.ReminderButton);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.FullDataButton);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel1);
+            this.Controls.Add(this.ExpiringLabel);
             this.Controls.Add(this.DuesDataGrid);
             this.Controls.Add(this.ExpiredDataGrid);
             this.Controls.Add(this.ExpiringDataGrid);
@@ -1464,6 +1476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1486,7 +1499,7 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel ExpiringLabel;
         private Bunifu.UI.WinForms.BunifuDataGridView DuesDataGrid;
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiredDataGrid;
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiringDataGrid;
@@ -1515,5 +1528,6 @@
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiredFDataGrid;
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiringFDataGrid;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private System.Windows.Forms.NumericUpDown ExpiringBox;
     }
 }

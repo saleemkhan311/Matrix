@@ -28,6 +28,8 @@ namespace Matrix
         private void Dashboard_Load(object sender, EventArgs e)
         {
             FullDataPanel.Hide();
+            ExpiringBox.Value = 4;
+            
             GetTotalValues();
             GetIncome();
             GetCurrentRevenue();
@@ -139,7 +141,8 @@ namespace Matrix
             {
                 using(MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 { con.Open();
-                    string query = "SELECT * FROM addmembers WHERE Date(Renewal_Date) - Date(CURRENT_DATE) = 4;";
+                    int dif = (int)ExpiringBox.Value;
+                    string query = $"SELECT * FROM addmembers WHERE DATEDIFF(Renewal_Date, CURRENT_DATE) >= 0 AND DATEDIFF(Renewal_Date, CURRENT_DATE)<= {dif};";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
@@ -225,6 +228,12 @@ namespace Matrix
         private void CloseButton_Click(object sender, EventArgs e)
         {
             FullDataPanel.Hide();
+        }
+
+        private void Expiring_ValueChanged(object sender, EventArgs e)
+        {
+            GetExpiring();
+            ExpiringLabel.Text = $"Members Expiring in {ExpiringBox.Value} days";
         }
     }
 }
