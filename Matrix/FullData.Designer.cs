@@ -80,7 +80,7 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(6, 236);
+            this.bunifuLabel2.Location = new System.Drawing.Point(12, 237);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(130, 25);
@@ -96,7 +96,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuLabel1.Location = new System.Drawing.Point(12, 22);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(208, 25);

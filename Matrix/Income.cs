@@ -41,7 +41,7 @@ namespace Matrix
                 {
                     con.Open();
                     string query = $"SELECT \r\n    SUM(Fee_Paid) AS Amount,\r\n    DATE(Payment_Date) AS Date\r\nFROM \r\n    payment \r\nWHERE \r\n    MONTH(Payment_Date) = {m}\r\nGROUP BY \r\n    DATE(Payment_Date)\r\nORDER BY \r\n    DATE(Payment_Date) ASC;";
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
 
