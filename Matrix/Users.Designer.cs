@@ -805,7 +805,7 @@
             this.UsersDataGridView.HeaderBackColor = System.Drawing.Color.Crimson;
             this.UsersDataGridView.HeaderBgColor = System.Drawing.Color.Empty;
             this.UsersDataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.UsersDataGridView.Location = new System.Drawing.Point(7, 260);
+            this.UsersDataGridView.Location = new System.Drawing.Point(9, 260);
             this.UsersDataGridView.Name = "UsersDataGridView";
             this.UsersDataGridView.ReadOnly = true;
             this.UsersDataGridView.RowHeadersVisible = false;

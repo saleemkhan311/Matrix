@@ -56,27 +56,25 @@ namespace Matrix
 
         private void MembersDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            ID = Convert.ToInt32(MembersDataGrid.SelectedRows[0].Cells[0].Value.ToString());
+            object AddmissiondateValue = MembersDataGrid.SelectedRows[0].Cells[0].Value;
+
             NameBox.Text = MembersDataGrid.SelectedRows[0].Cells[1].Value.ToString();
             FatherBox.Text = MembersDataGrid.SelectedRows[0].Cells[2].Value.ToString();
-            PhoneBox.Text = MembersDataGrid.SelectedRows[0].Cells[3].Value.ToString();
-            GenderBox.Text = MembersDataGrid.SelectedRows[0].Cells[4].Value.ToString();
-            WeightBox.Text = MembersDataGrid.SelectedRows[0].Cells[5].Value.ToString();
-            MembershipBox.Text = MembersDataGrid.SelectedRows[0].Cells[6].Value.ToString();
-            AgeBox.Text = MembersDataGrid.SelectedRows[0].Cells[7].Value.ToString();
+            MembershipBox.Text = MembersDataGrid.SelectedRows[0].Cells[3].Value.ToString();
+            ID = Convert.ToInt32(MembersDataGrid.SelectedRows[0].Cells[4].Value.ToString());
+            PhoneBox.Text = MembersDataGrid.SelectedRows[0].Cells[5].Value.ToString();
+            GenderBox.Text = MembersDataGrid.SelectedRows[0].Cells[6].Value.ToString();
+            WeightBox.Text = MembersDataGrid.SelectedRows[0].Cells[7].Value.ToString();
+
             PaidBox.Text = MembersDataGrid.SelectedRows[0].Cells[8].Value.ToString();
             DuesBox.Text = MembersDataGrid.SelectedRows[0].Cells[9].Value.ToString();
-            string img = MembersDataGrid.SelectedRows[0].Cells[14].Value.ToString();
-            img_Dir = img;
-            if(img != null && img.Length > 20)
-            { ProfileBox.Image = Image.FromFile(img); }
-            else { ProfileBox.Image = null; }
-           
-            object joiningDateValue = MembersDataGrid.SelectedRows[0].Cells[10].Value;
-            DateTime selectedJoiningDate;
-            if (DateTime.TryParse(joiningDateValue.ToString(), out selectedJoiningDate))
+
+
+            object paymentDateValue = MembersDataGrid.SelectedRows[0].Cells[10].Value;
+            DateTime selectedPaymentDate;
+            if (DateTime.TryParse(paymentDateValue.ToString(), out selectedPaymentDate))
             {
-                PaymentDate.Value = selectedJoiningDate;
+                PaymentDate.Value = selectedPaymentDate;
             }
             object RenewaldateValue = MembersDataGrid.SelectedRows[0].Cells[11].Value;
 
@@ -87,7 +85,8 @@ namespace Matrix
                 RenewalDate.Value = selectedDate;
             }
 
-            object AddmissiondateValue = MembersDataGrid.SelectedRows[0].Cells[12].Value;
+            PaymentType.Text = MembersDataGrid.SelectedRows[0].Cells[12].Value.ToString();
+            Description.Text = MembersDataGrid.SelectedRows[0].Cells[13].Value.ToString();
 
             DateTime selectedAddmisionDate;
 
@@ -95,6 +94,12 @@ namespace Matrix
             {
                 AddmissionDate.Value = selectedAddmisionDate;
             }
+
+            string img = MembersDataGrid.SelectedRows[0].Cells[15].Value.ToString();
+            img_Dir = img;
+            if (img != null && img.Length > 20)
+            { ProfileBox.Image = Image.FromFile(img); }
+            else { ProfileBox.Image = null; }
         }
         void QueryPayment()
         {
@@ -152,7 +157,7 @@ namespace Matrix
                 con.Open();
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
-                cmd.CommandText = "UPDATE addmembers SET ID=@ID, Member_Name=@Member_Name, Member_Father_Name=@Member_Father_Name, Member_phone=@Member_phone,Gender=@Gender,Weight=@Weight,Membership_type=@Membership_type,Member_Age=@Member_Age,Fee_Paid=@Fee_Paid,Dues=@Dues,Payment_Date=@Payment_Date,Renewal_Date=@Renewal_Date,Addmission_Date=@Addmission_Date,Image_Dir=@Image_Dir WHERE ID= @ID;";
+                cmd.CommandText = "UPDATE addmembers SET ID=@ID, Member_Name=@Member_Name, Member_Father_Name=@Member_Father_Name, Member_phone=@Member_phone,Gender=@Gender,Weight=@Weight,Membership_type=@Membership_type,Fee_Paid=@Fee_Paid,Dues=@Dues,Payment_Date=@Payment_Date,Renewal_Date=@Renewal_Date,Addmission_Date=@Addmission_Date,PaymentType=@PaymentType,Description=@Description,Image_Dir=@Image_Dir WHERE ID= @ID;";
                 cmd.Parameters.AddWithValue("@ID", ID);
                 cmd.Parameters.AddWithValue("@Member_Name", NameBox.Text);
                 cmd.Parameters.AddWithValue("@Member_Father_Name", FatherBox.Text);
@@ -160,11 +165,12 @@ namespace Matrix
                 cmd.Parameters.AddWithValue("@Gender", GenderBox.Text);
                 cmd.Parameters.AddWithValue("@Weight", WeightBox.Text);
                 cmd.Parameters.AddWithValue("@Membership_type", MembershipBox.Text);
-                cmd.Parameters.AddWithValue("@Member_Age", AgeBox.Text);
                 cmd.Parameters.AddWithValue("@Fee_Paid", PaidBox.Text);
                 cmd.Parameters.AddWithValue("@Dues", DuesBox.Text);
                 cmd.Parameters.AddWithValue("@Payment_Date", PaymentDate.Value);
                 cmd.Parameters.AddWithValue("@Renewal_Date", RenewalDate.Value);
+                cmd.Parameters.AddWithValue("@PaymentType", PaymentType.Text);
+                cmd.Parameters.AddWithValue("@Description", Description.Text);
                 cmd.Parameters.AddWithValue("@Addmission_Date", AddmissionDate.Value);
                 cmd.Parameters.AddWithValue("@Image_Dir", img_Dir);
                 cmd.ExecuteNonQuery();
@@ -180,11 +186,18 @@ namespace Matrix
 
         private void AddPicButton_Click(object sender, EventArgs e)
         {
+            if(NameBox.Text != string.Empty)
+            {pic();}else { MessageBox.Show("Fill the Name Box to take Picture"); }
+        }
+        private void pic()
+        {
             ProfilePanel profilePanel = new ProfilePanel(NameBox.Text);
-
             profilePanel.ShowDialog();
-            img_Dir = ProfilePanel.img_Dir;
-            ProfileBox.Image = Image.FromFile(img_Dir);
+            if (ProfilePanel.img_Dir != null && ProfilePanel.img_Dir.Length > 20)
+            {
+                img_Dir = ProfilePanel.img_Dir;
+                ProfileBox.Image = Image.FromFile(img_Dir);
+            }
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
@@ -212,7 +225,7 @@ namespace Matrix
 
         void ClearBox()
         {
-            BunifuTextBox[] boxes = { NameBox, AgeBox, WeightBox, PaidBox, DuesBox, PhoneBox };
+            BunifuTextBox[] boxes = { NameBox,  WeightBox, PaidBox, DuesBox, PhoneBox };
             foreach (BunifuTextBox box in boxes)
             {
                 box.Clear();
@@ -230,19 +243,26 @@ namespace Matrix
 
         private void searchCon()
         {
-            
+
             DataTable dataTable = new DataTable();
-            if(SearchDateRad.Checked)
+            if (SearchDateRad.Checked)
             {
                 string x = SearchDate.Value.Date.ToString("yyyy-MM-dd");
-               
-                AppSettings.SearchControl("addmembers", "Payment_Date",x, dataTable);
-            }else if(SearchNameRad.Checked)
-            {
-                AppSettings.SearchControl("addmembers", "Member_Name", SearchBox.Text, dataTable);
+
+                AppSettings.SearchControl("addmembers", "Payment_Date", x, dataTable, true);
             }
-            
-            if(dataTable.Rows.Count > 0 )
+            else if (SearchNameRad.Checked)
+            {
+                AppSettings.SearchControl("addmembers", "Member_Name", SearchBox.Text, dataTable, false);
+            }
+            else if (SearchMonthRad.Checked)
+            {
+                string x = SearchDate.Value.Date.ToString("yyyy-MM-dd");
+
+                AppSettings.SearchControl("addmembers", "Month(Payment_Date)", MonthSearchBox.Text, dataTable, true);
+            }
+
+            if (dataTable.Rows.Count > 0 )
             {
                 MembersDataGrid.DataSource = dataTable;
             }
@@ -256,8 +276,9 @@ namespace Matrix
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
-            if (SearchBox.Text == string.Empty)
-                LoadData();
+            /*if (SearchBox.Text == string.Empty)
+            { LoadData(); }
+            else { searchCon(); }*/
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
@@ -268,6 +289,51 @@ namespace Matrix
         private void SearchButton_Click(object sender, EventArgs e)
         {
             searchCon();
+        }
+
+        private void ReceiptButton_Click(object sender, EventArgs e)
+        {
+            ReceiptPanel receipt = new ReceiptPanel();
+            
+            string rec = MembersDataGrid.SelectedRows[0].Cells[14].Value.ToString();
+            
+            receipt.payment = PaymentDate.Value.ToString("dd-MM-yyyy");
+            receipt.renewal = RenewalDate.Value.ToString("dd-MM-yyyy");
+            receipt.member_Name = NameBox.Text;
+            receipt.weight = WeightBox.Text;
+            receipt.Fees = PaidBox.Text;
+            receipt.dues = DuesBox.Text;
+            receipt.Membership = MembershipBox.Text;
+            receipt.total = PaidBox.Text;
+            receipt.received = rec;
+            receipt.ShowDialog();
+        }
+
+        private void PaidBox_TextChanged(object sender, EventArgs e)
+        {
+            AppSettings.NumericOnly(PaidBox);
+        }
+
+        private void DuesBox_TextChanged(object sender, EventArgs e)
+        {
+            AppSettings.NumericOnly(DuesBox);
+        }
+
+        private void WeightBox_TextChanged(object sender, EventArgs e)
+        {
+            AppSettings.NumericOnly(WeightBox);
+        }
+
+      
+
+        private void SearchDate_ValueChanged(object sender, EventArgs e)
+        {
+                searchCon();
+        }
+
+        private void PhoneBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

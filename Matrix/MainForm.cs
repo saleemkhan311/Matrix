@@ -84,5 +84,10 @@ namespace Matrix
         {
             loadForm(new Payment());
         }
+
+        private void Update_Click(object sender, EventArgs e)
+        {
+            loadForm(new Update());
+        }
     }
 }

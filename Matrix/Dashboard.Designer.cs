@@ -38,9 +38,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -52,71 +49,74 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.RevenueLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.IncomeLadiesLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.IncomeGentsLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalMembersLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalMaleLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalFemaleLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExpiringDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiredDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.DuesDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiringLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.ReminderButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.RefreshButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.FullDataButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.ExpiringBox = new System.Windows.Forms.NumericUpDown();
             this.FullDataPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.CloseButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.ReminderFButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ExpiringFLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.DuesFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiredFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiringFDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.ExpiringBox = new System.Windows.Forms.NumericUpDown();
+            this.ReminderButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.RefreshButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.FullDataButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.bunifuShadowPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.bunifuShadowPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.bunifuShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.bunifuShadowPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuesDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).BeginInit();
             this.FullDataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -181,17 +181,6 @@
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::Matrix.Properties.Resources.free_revenue_growth_vector_4qw9z_removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
             // bunifuShadowPanel2
             // 
             this.bunifuShadowPanel2.BackColor = System.Drawing.Color.Transparent;
@@ -250,18 +239,6 @@
             this.bunifuLabel13.Text = "Income of Current\r\nMonth Ladies";
             this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::Matrix.Properties.Resources.Income_Ladies;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
             // 
             // bunifuShadowPanel3
             // 
@@ -325,17 +302,6 @@
             this.IncomeGentsLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.IncomeGentsLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::Matrix.Properties.Resources.Expense;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
             // bunifuShadowPanel4
             // 
             this.bunifuShadowPanel4.BackColor = System.Drawing.Color.Transparent;
@@ -395,17 +361,6 @@
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Matrix.Properties.Resources.Group;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // bunifuShadowPanel5
             // 
             this.bunifuShadowPanel5.BackColor = System.Drawing.Color.Transparent;
@@ -463,18 +418,6 @@
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Matrix.Properties.Resources.Male;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // bunifuShadowPanel6
             // 
             this.bunifuShadowPanel6.BackColor = System.Drawing.Color.Transparent;
@@ -531,17 +474,6 @@
             this.bunifuLabel8.Text = "Total Female Members";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Matrix.Properties.Resources.female1;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // ExpiringDataGrid
             // 
@@ -771,6 +703,395 @@
             this.bunifuLabel3.Text = "Members with dues";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 15;
+            this.bunifuElipse2.TargetControl = this;
+            // 
+            // ExpiringBox
+            // 
+            this.ExpiringBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpiringBox.Location = new System.Drawing.Point(664, 5);
+            this.ExpiringBox.Name = "ExpiringBox";
+            this.ExpiringBox.Size = new System.Drawing.Size(110, 25);
+            this.ExpiringBox.TabIndex = 6;
+            this.ExpiringBox.ValueChanged += new System.EventHandler(this.Expiring_ValueChanged);
+            // 
+            // FullDataPanel
+            // 
+            this.FullDataPanel.BackgroundColor = System.Drawing.Color.Transparent;
+            this.FullDataPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FullDataPanel.BackgroundImage")));
+            this.FullDataPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FullDataPanel.BorderColor = System.Drawing.Color.Transparent;
+            this.FullDataPanel.BorderRadius = 3;
+            this.FullDataPanel.BorderThickness = 1;
+            this.FullDataPanel.Controls.Add(this.CloseButton);
+            this.FullDataPanel.Controls.Add(this.ReminderFButton);
+            this.FullDataPanel.Controls.Add(this.bunifuLabel6);
+            this.FullDataPanel.Controls.Add(this.bunifuLabel9);
+            this.FullDataPanel.Controls.Add(this.ExpiringFLabel);
+            this.FullDataPanel.Controls.Add(this.DuesFDataGrid);
+            this.FullDataPanel.Controls.Add(this.ExpiredFDataGrid);
+            this.FullDataPanel.Controls.Add(this.ExpiringFDataGrid);
+            this.FullDataPanel.Location = new System.Drawing.Point(2, 5);
+            this.FullDataPanel.Name = "FullDataPanel";
+            this.FullDataPanel.ShowBorders = true;
+            this.FullDataPanel.Size = new System.Drawing.Size(776, 654);
+            this.FullDataPanel.TabIndex = 5;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.ActiveImage = null;
+            this.CloseButton.AllowAnimations = true;
+            this.CloseButton.AllowBuffering = false;
+            this.CloseButton.AllowToggling = false;
+            this.CloseButton.AllowZooming = true;
+            this.CloseButton.AllowZoomingOnFocus = false;
+            this.CloseButton.BackColor = System.Drawing.Color.Transparent;
+            this.CloseButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.CloseButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.ErrorImage")));
+            this.CloseButton.FadeWhenInactive = false;
+            this.CloseButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.CloseButton.Image = global::Matrix.Properties.Resources.arrow_down;
+            this.CloseButton.ImageActive = null;
+            this.CloseButton.ImageLocation = null;
+            this.CloseButton.ImageMargin = 0;
+            this.CloseButton.ImageSize = new System.Drawing.Size(29, 29);
+            this.CloseButton.ImageZoomSize = new System.Drawing.Size(30, 30);
+            this.CloseButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.InitialImage")));
+            this.CloseButton.Location = new System.Drawing.Point(742, 9);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Rotation = 0;
+            this.CloseButton.ShowActiveImage = true;
+            this.CloseButton.ShowCursorChanges = true;
+            this.CloseButton.ShowImageBorders = true;
+            this.CloseButton.ShowSizeMarkers = false;
+            this.CloseButton.Size = new System.Drawing.Size(30, 30);
+            this.CloseButton.TabIndex = 20;
+            this.CloseButton.ToolTipText = "";
+            this.CloseButton.WaitOnLoad = false;
+            this.CloseButton.Zoom = 0;
+            this.CloseButton.ZoomSpeed = 10;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // ReminderFButton
+            // 
+            this.ReminderFButton.AllowAnimations = true;
+            this.ReminderFButton.AllowMouseEffects = true;
+            this.ReminderFButton.AllowToggling = false;
+            this.ReminderFButton.AnimationSpeed = 200;
+            this.ReminderFButton.AutoGenerateColors = false;
+            this.ReminderFButton.AutoRoundBorders = false;
+            this.ReminderFButton.AutoSizeLeftIcon = true;
+            this.ReminderFButton.AutoSizeRightIcon = true;
+            this.ReminderFButton.BackColor = System.Drawing.Color.Transparent;
+            this.ReminderFButton.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.ReminderFButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReminderFButton.BackgroundImage")));
+            this.ReminderFButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ReminderFButton.ButtonText = "Send Reminder";
+            this.ReminderFButton.ButtonTextMarginLeft = 0;
+            this.ReminderFButton.ColorContrastOnClick = 45;
+            this.ReminderFButton.ColorContrastOnHover = 45;
+            this.ReminderFButton.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.ReminderFButton.CustomizableEdges = borderEdges1;
+            this.ReminderFButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ReminderFButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ReminderFButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ReminderFButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ReminderFButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.ReminderFButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderFButton.ForeColor = System.Drawing.Color.White;
+            this.ReminderFButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ReminderFButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.ReminderFButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.ReminderFButton.IconMarginLeft = 11;
+            this.ReminderFButton.IconPadding = 10;
+            this.ReminderFButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ReminderFButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.ReminderFButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.ReminderFButton.IconSize = 25;
+            this.ReminderFButton.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.ReminderFButton.IdleBorderRadius = 15;
+            this.ReminderFButton.IdleBorderThickness = 1;
+            this.ReminderFButton.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.ReminderFButton.IdleIconLeftImage = null;
+            this.ReminderFButton.IdleIconRightImage = null;
+            this.ReminderFButton.IndicateFocus = false;
+            this.ReminderFButton.Location = new System.Drawing.Point(644, 236);
+            this.ReminderFButton.Name = "ReminderFButton";
+            this.ReminderFButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ReminderFButton.OnDisabledState.BorderRadius = 15;
+            this.ReminderFButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ReminderFButton.OnDisabledState.BorderThickness = 1;
+            this.ReminderFButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ReminderFButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ReminderFButton.OnDisabledState.IconLeftImage = null;
+            this.ReminderFButton.OnDisabledState.IconRightImage = null;
+            this.ReminderFButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.ReminderFButton.onHoverState.BorderRadius = 15;
+            this.ReminderFButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ReminderFButton.onHoverState.BorderThickness = 1;
+            this.ReminderFButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.ReminderFButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.ReminderFButton.onHoverState.IconLeftImage = null;
+            this.ReminderFButton.onHoverState.IconRightImage = null;
+            this.ReminderFButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ReminderFButton.OnIdleState.BorderRadius = 15;
+            this.ReminderFButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ReminderFButton.OnIdleState.BorderThickness = 1;
+            this.ReminderFButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ReminderFButton.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.ReminderFButton.OnIdleState.IconLeftImage = null;
+            this.ReminderFButton.OnIdleState.IconRightImage = null;
+            this.ReminderFButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.ReminderFButton.OnPressedState.BorderRadius = 15;
+            this.ReminderFButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ReminderFButton.OnPressedState.BorderThickness = 1;
+            this.ReminderFButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.ReminderFButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.ReminderFButton.OnPressedState.IconLeftImage = null;
+            this.ReminderFButton.OnPressedState.IconRightImage = null;
+            this.ReminderFButton.Size = new System.Drawing.Size(130, 33);
+            this.ReminderFButton.TabIndex = 19;
+            this.ReminderFButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReminderFButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ReminderFButton.TextMarginLeft = 0;
+            this.ReminderFButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.ReminderFButton.UseDefaultRadiusAndThickness = true;
+            // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.CursorType = null;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel6.Location = new System.Drawing.Point(8, 443);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(148, 25);
+            this.bunifuLabel6.TabIndex = 16;
+            this.bunifuLabel6.Text = "Members with dues";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel9
+            // 
+            this.bunifuLabel9.AllowParentOverrides = false;
+            this.bunifuLabel9.AutoEllipsis = false;
+            this.bunifuLabel9.CursorType = null;
+            this.bunifuLabel9.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel9.Location = new System.Drawing.Point(2, 242);
+            this.bunifuLabel9.Name = "bunifuLabel9";
+            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel9.Size = new System.Drawing.Size(130, 25);
+            this.bunifuLabel9.TabIndex = 17;
+            this.bunifuLabel9.Text = "Expired Members";
+            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // ExpiringFLabel
+            // 
+            this.ExpiringFLabel.AllowParentOverrides = false;
+            this.ExpiringFLabel.AutoEllipsis = false;
+            this.ExpiringFLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ExpiringFLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.ExpiringFLabel.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.ExpiringFLabel.Location = new System.Drawing.Point(8, 18);
+            this.ExpiringFLabel.Name = "ExpiringFLabel";
+            this.ExpiringFLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ExpiringFLabel.Size = new System.Drawing.Size(208, 25);
+            this.ExpiringFLabel.TabIndex = 18;
+            this.ExpiringFLabel.Text = "Members Expiring in 7 days";
+            this.ExpiringFLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ExpiringFLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // DuesFDataGrid
+            // 
+            this.DuesFDataGrid.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.DuesFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DuesFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DuesFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DuesFDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.DuesFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DuesFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DuesFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DuesFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DuesFDataGrid.ColumnHeadersHeight = 40;
+            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DuesFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
+            this.DuesFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.DuesFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
+            this.DuesFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.DuesFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DuesFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            this.DuesFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DuesFDataGrid.CurrentTheme.Name = null;
+            this.DuesFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            this.DuesFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DuesFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DuesFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.DuesFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DuesFDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DuesFDataGrid.EnableHeadersVisualStyles = false;
+            this.DuesFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.DuesFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
+            this.DuesFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
+            this.DuesFDataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.DuesFDataGrid.Location = new System.Drawing.Point(8, 474);
+            this.DuesFDataGrid.Name = "DuesFDataGrid";
+            this.DuesFDataGrid.RowHeadersVisible = false;
+            this.DuesFDataGrid.RowTemplate.Height = 40;
+            this.DuesFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DuesFDataGrid.Size = new System.Drawing.Size(766, 171);
+            this.DuesFDataGrid.TabIndex = 13;
+            this.DuesFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
+            // 
+            // ExpiredFDataGrid
+            // 
+            this.ExpiredFDataGrid.AllowCustomTheming = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.ExpiredFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.ExpiredFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.ExpiredFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.ExpiredFDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.ExpiredFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ExpiredFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ExpiredFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExpiredFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.ExpiredFDataGrid.ColumnHeadersHeight = 40;
+            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.ExpiredFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
+            this.ExpiredFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
+            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.ExpiredFDataGrid.CurrentTheme.Name = null;
+            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ExpiredFDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ExpiredFDataGrid.EnableHeadersVisualStyles = false;
+            this.ExpiredFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.ExpiredFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
+            this.ExpiredFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
+            this.ExpiredFDataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.ExpiredFDataGrid.Location = new System.Drawing.Point(8, 274);
+            this.ExpiredFDataGrid.Name = "ExpiredFDataGrid";
+            this.ExpiredFDataGrid.RowHeadersVisible = false;
+            this.ExpiredFDataGrid.RowTemplate.Height = 40;
+            this.ExpiredFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ExpiredFDataGrid.Size = new System.Drawing.Size(766, 171);
+            this.ExpiredFDataGrid.TabIndex = 14;
+            this.ExpiredFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
+            // 
+            // ExpiringFDataGrid
+            // 
+            this.ExpiringFDataGrid.AllowCustomTheming = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.ExpiringFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.ExpiringFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.ExpiringFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.ExpiringFDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.ExpiringFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ExpiringFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ExpiringFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExpiringFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.ExpiringFDataGrid.ColumnHeadersHeight = 40;
+            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
+            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.ExpiringFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
+            this.ExpiringFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
+            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
+            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.ExpiringFDataGrid.CurrentTheme.Name = null;
+            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ExpiringFDataGrid.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ExpiringFDataGrid.EnableHeadersVisualStyles = false;
+            this.ExpiringFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
+            this.ExpiringFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
+            this.ExpiringFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
+            this.ExpiringFDataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.ExpiringFDataGrid.Location = new System.Drawing.Point(8, 59);
+            this.ExpiringFDataGrid.Name = "ExpiringFDataGrid";
+            this.ExpiringFDataGrid.RowHeadersVisible = false;
+            this.ExpiringFDataGrid.RowTemplate.Height = 40;
+            this.ExpiringFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ExpiringFDataGrid.Size = new System.Drawing.Size(766, 171);
+            this.ExpiringFDataGrid.TabIndex = 15;
+            this.ExpiringFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             // 
             // ReminderButton
             // 
@@ -1041,394 +1362,73 @@
             this.FullDataButton.UseDefaultRadiusAndThickness = true;
             this.FullDataButton.Click += new System.EventHandler(this.FullDataButton_Click);
             // 
-            // FullDataPanel
+            // pictureBox3
             // 
-            this.FullDataPanel.BackgroundColor = System.Drawing.Color.Transparent;
-            this.FullDataPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FullDataPanel.BackgroundImage")));
-            this.FullDataPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FullDataPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.FullDataPanel.BorderRadius = 3;
-            this.FullDataPanel.BorderThickness = 1;
-            this.FullDataPanel.Controls.Add(this.CloseButton);
-            this.FullDataPanel.Controls.Add(this.ReminderFButton);
-            this.FullDataPanel.Controls.Add(this.bunifuLabel6);
-            this.FullDataPanel.Controls.Add(this.bunifuLabel9);
-            this.FullDataPanel.Controls.Add(this.bunifuLabel11);
-            this.FullDataPanel.Controls.Add(this.DuesFDataGrid);
-            this.FullDataPanel.Controls.Add(this.ExpiredFDataGrid);
-            this.FullDataPanel.Controls.Add(this.ExpiringFDataGrid);
-            this.FullDataPanel.Location = new System.Drawing.Point(7, 5);
-            this.FullDataPanel.Name = "FullDataPanel";
-            this.FullDataPanel.ShowBorders = true;
-            this.FullDataPanel.Size = new System.Drawing.Size(776, 654);
-            this.FullDataPanel.TabIndex = 5;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Matrix.Properties.Resources.Male;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // CloseButton
+            // pictureBox2
             // 
-            this.CloseButton.ActiveImage = null;
-            this.CloseButton.AllowAnimations = true;
-            this.CloseButton.AllowBuffering = false;
-            this.CloseButton.AllowToggling = false;
-            this.CloseButton.AllowZooming = true;
-            this.CloseButton.AllowZoomingOnFocus = false;
-            this.CloseButton.BackColor = System.Drawing.Color.Transparent;
-            this.CloseButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.CloseButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.ErrorImage")));
-            this.CloseButton.FadeWhenInactive = false;
-            this.CloseButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.CloseButton.Image = global::Matrix.Properties.Resources.arrow_down;
-            this.CloseButton.ImageActive = null;
-            this.CloseButton.ImageLocation = null;
-            this.CloseButton.ImageMargin = 0;
-            this.CloseButton.ImageSize = new System.Drawing.Size(29, 29);
-            this.CloseButton.ImageZoomSize = new System.Drawing.Size(30, 30);
-            this.CloseButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.InitialImage")));
-            this.CloseButton.Location = new System.Drawing.Point(742, 9);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Rotation = 0;
-            this.CloseButton.ShowActiveImage = true;
-            this.CloseButton.ShowCursorChanges = true;
-            this.CloseButton.ShowImageBorders = true;
-            this.CloseButton.ShowSizeMarkers = false;
-            this.CloseButton.Size = new System.Drawing.Size(30, 30);
-            this.CloseButton.TabIndex = 20;
-            this.CloseButton.ToolTipText = "";
-            this.CloseButton.WaitOnLoad = false;
-            this.CloseButton.Zoom = 0;
-            this.CloseButton.ZoomSpeed = 10;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Matrix.Properties.Resources.female1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // ReminderFButton
+            // pictureBox1
             // 
-            this.ReminderFButton.AllowAnimations = true;
-            this.ReminderFButton.AllowMouseEffects = true;
-            this.ReminderFButton.AllowToggling = false;
-            this.ReminderFButton.AnimationSpeed = 200;
-            this.ReminderFButton.AutoGenerateColors = false;
-            this.ReminderFButton.AutoRoundBorders = false;
-            this.ReminderFButton.AutoSizeLeftIcon = true;
-            this.ReminderFButton.AutoSizeRightIcon = true;
-            this.ReminderFButton.BackColor = System.Drawing.Color.Transparent;
-            this.ReminderFButton.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.ReminderFButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReminderFButton.BackgroundImage")));
-            this.ReminderFButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ReminderFButton.ButtonText = "Send Reminder";
-            this.ReminderFButton.ButtonTextMarginLeft = 0;
-            this.ReminderFButton.ColorContrastOnClick = 45;
-            this.ReminderFButton.ColorContrastOnHover = 45;
-            this.ReminderFButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.ReminderFButton.CustomizableEdges = borderEdges1;
-            this.ReminderFButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.ReminderFButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.ReminderFButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ReminderFButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.ReminderFButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.ReminderFButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderFButton.ForeColor = System.Drawing.Color.White;
-            this.ReminderFButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ReminderFButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.ReminderFButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.ReminderFButton.IconMarginLeft = 11;
-            this.ReminderFButton.IconPadding = 10;
-            this.ReminderFButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReminderFButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.ReminderFButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.ReminderFButton.IconSize = 25;
-            this.ReminderFButton.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.ReminderFButton.IdleBorderRadius = 15;
-            this.ReminderFButton.IdleBorderThickness = 1;
-            this.ReminderFButton.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.ReminderFButton.IdleIconLeftImage = null;
-            this.ReminderFButton.IdleIconRightImage = null;
-            this.ReminderFButton.IndicateFocus = false;
-            this.ReminderFButton.Location = new System.Drawing.Point(644, 236);
-            this.ReminderFButton.Name = "ReminderFButton";
-            this.ReminderFButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.ReminderFButton.OnDisabledState.BorderRadius = 15;
-            this.ReminderFButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ReminderFButton.OnDisabledState.BorderThickness = 1;
-            this.ReminderFButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ReminderFButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.ReminderFButton.OnDisabledState.IconLeftImage = null;
-            this.ReminderFButton.OnDisabledState.IconRightImage = null;
-            this.ReminderFButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.ReminderFButton.onHoverState.BorderRadius = 15;
-            this.ReminderFButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ReminderFButton.onHoverState.BorderThickness = 1;
-            this.ReminderFButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.ReminderFButton.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.ReminderFButton.onHoverState.IconLeftImage = null;
-            this.ReminderFButton.onHoverState.IconRightImage = null;
-            this.ReminderFButton.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.ReminderFButton.OnIdleState.BorderRadius = 15;
-            this.ReminderFButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ReminderFButton.OnIdleState.BorderThickness = 1;
-            this.ReminderFButton.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.ReminderFButton.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.ReminderFButton.OnIdleState.IconLeftImage = null;
-            this.ReminderFButton.OnIdleState.IconRightImage = null;
-            this.ReminderFButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.ReminderFButton.OnPressedState.BorderRadius = 15;
-            this.ReminderFButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ReminderFButton.OnPressedState.BorderThickness = 1;
-            this.ReminderFButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.ReminderFButton.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.ReminderFButton.OnPressedState.IconLeftImage = null;
-            this.ReminderFButton.OnPressedState.IconRightImage = null;
-            this.ReminderFButton.Size = new System.Drawing.Size(130, 33);
-            this.ReminderFButton.TabIndex = 19;
-            this.ReminderFButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ReminderFButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ReminderFButton.TextMarginLeft = 0;
-            this.ReminderFButton.TextPadding = new System.Windows.Forms.Padding(0);
-            this.ReminderFButton.UseDefaultRadiusAndThickness = true;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Matrix.Properties.Resources.Group;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // bunifuLabel6
+            // pictureBox6
             // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(8, 443);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(148, 25);
-            this.bunifuLabel6.TabIndex = 16;
-            this.bunifuLabel6.Text = "Members with dues";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::Matrix.Properties.Resources.Expense;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
-            // bunifuLabel9
+            // pictureBox4
             // 
-            this.bunifuLabel9.AllowParentOverrides = false;
-            this.bunifuLabel9.AutoEllipsis = false;
-            this.bunifuLabel9.CursorType = null;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel9.Location = new System.Drawing.Point(2, 242);
-            this.bunifuLabel9.Name = "bunifuLabel9";
-            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(130, 25);
-            this.bunifuLabel9.TabIndex = 17;
-            this.bunifuLabel9.Text = "Expired Members";
-            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::Matrix.Properties.Resources.Income_Ladies;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
-            // bunifuLabel11
+            // pictureBox5
             // 
-            this.bunifuLabel11.AllowParentOverrides = false;
-            this.bunifuLabel11.AutoEllipsis = false;
-            this.bunifuLabel11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel11.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel11.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel11.Location = new System.Drawing.Point(8, 18);
-            this.bunifuLabel11.Name = "bunifuLabel11";
-            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(208, 25);
-            this.bunifuLabel11.TabIndex = 18;
-            this.bunifuLabel11.Text = "Members Expiring in 7 days";
-            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // DuesFDataGrid
-            // 
-            this.DuesFDataGrid.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.DuesFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DuesFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DuesFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DuesFDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.DuesFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DuesFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DuesFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DuesFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DuesFDataGrid.ColumnHeadersHeight = 40;
-            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.DuesFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.DuesFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
-            this.DuesFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.DuesFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
-            this.DuesFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.DuesFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DuesFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            this.DuesFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.DuesFDataGrid.CurrentTheme.Name = null;
-            this.DuesFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            this.DuesFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DuesFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DuesFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.DuesFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DuesFDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DuesFDataGrid.EnableHeadersVisualStyles = false;
-            this.DuesFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.DuesFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.DuesFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
-            this.DuesFDataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.DuesFDataGrid.Location = new System.Drawing.Point(8, 474);
-            this.DuesFDataGrid.Name = "DuesFDataGrid";
-            this.DuesFDataGrid.RowHeadersVisible = false;
-            this.DuesFDataGrid.RowTemplate.Height = 40;
-            this.DuesFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DuesFDataGrid.Size = new System.Drawing.Size(766, 171);
-            this.DuesFDataGrid.TabIndex = 13;
-            this.DuesFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
-            // 
-            // ExpiredFDataGrid
-            // 
-            this.ExpiredFDataGrid.AllowCustomTheming = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.ExpiredFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.ExpiredFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.ExpiredFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.ExpiredFDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.ExpiredFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ExpiredFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ExpiredFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExpiredFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.ExpiredFDataGrid.ColumnHeadersHeight = 40;
-            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.ExpiredFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ExpiredFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
-            this.ExpiredFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
-            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            this.ExpiredFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ExpiredFDataGrid.CurrentTheme.Name = null;
-            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.ExpiredFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ExpiredFDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ExpiredFDataGrid.EnableHeadersVisualStyles = false;
-            this.ExpiredFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.ExpiredFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.ExpiredFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
-            this.ExpiredFDataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.ExpiredFDataGrid.Location = new System.Drawing.Point(8, 274);
-            this.ExpiredFDataGrid.Name = "ExpiredFDataGrid";
-            this.ExpiredFDataGrid.RowHeadersVisible = false;
-            this.ExpiredFDataGrid.RowTemplate.Height = 40;
-            this.ExpiredFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ExpiredFDataGrid.Size = new System.Drawing.Size(766, 171);
-            this.ExpiredFDataGrid.TabIndex = 14;
-            this.ExpiredFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
-            // 
-            // ExpiringFDataGrid
-            // 
-            this.ExpiringFDataGrid.AllowCustomTheming = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.ExpiringFDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.ExpiringFDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.ExpiringFDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.ExpiringFDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.ExpiringFDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ExpiringFDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ExpiringFDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExpiringFDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.ExpiringFDataGrid.ColumnHeadersHeight = 40;
-            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(196)))), ((int)(((byte)(206)))));
-            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.ExpiringFDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ExpiringFDataGrid.CurrentTheme.BackColor = System.Drawing.Color.Crimson;
-            this.ExpiringFDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.Crimson;
-            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(16)))), ((int)(((byte)(48)))));
-            this.ExpiringFDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ExpiringFDataGrid.CurrentTheme.Name = null;
-            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            this.ExpiringFDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(216)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(114)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ExpiringFDataGrid.DefaultCellStyle = dataGridViewCellStyle9;
-            this.ExpiringFDataGrid.EnableHeadersVisualStyles = false;
-            this.ExpiringFDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
-            this.ExpiringFDataGrid.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.ExpiringFDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
-            this.ExpiringFDataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.ExpiringFDataGrid.Location = new System.Drawing.Point(8, 59);
-            this.ExpiringFDataGrid.Name = "ExpiringFDataGrid";
-            this.ExpiringFDataGrid.RowHeadersVisible = false;
-            this.ExpiringFDataGrid.RowTemplate.Height = 40;
-            this.ExpiringFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ExpiringFDataGrid.Size = new System.Drawing.Size(766, 171);
-            this.ExpiringFDataGrid.TabIndex = 15;
-            this.ExpiringFDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 15;
-            this.bunifuElipse2.TargetControl = this;
-            // 
-            // ExpiringBox
-            // 
-            this.ExpiringBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpiringBox.Location = new System.Drawing.Point(664, 5);
-            this.ExpiringBox.Name = "ExpiringBox";
-            this.ExpiringBox.Size = new System.Drawing.Size(110, 25);
-            this.ExpiringBox.TabIndex = 6;
-            this.ExpiringBox.ValueChanged += new System.EventHandler(this.Expiring_ValueChanged);
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::Matrix.Properties.Resources.free_revenue_growth_vector_4qw9z_removebg_preview;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // Dashboard
             // 
@@ -1457,26 +1457,26 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.bunifuShadowPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuShadowPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.bunifuShadowPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.bunifuShadowPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuShadowPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.bunifuShadowPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuesDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).EndInit();
             this.FullDataPanel.ResumeLayout(false);
             this.FullDataPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExpiringBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1523,7 +1523,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton ReminderFButton;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
+        private Bunifu.UI.WinForms.BunifuLabel ExpiringFLabel;
         private Bunifu.UI.WinForms.BunifuDataGridView DuesFDataGrid;
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiredFDataGrid;
         private Bunifu.UI.WinForms.BunifuDataGridView ExpiringFDataGrid;

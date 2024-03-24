@@ -115,6 +115,14 @@ namespace Matrix
         private void SaveButton_Click(object sender, EventArgs e)
         {
             SaveImage();
+            try
+            {
+                videoCapture.SignalToStop();
+                isStreaming = false;
+                this.Dispose();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
         }
 
         private void SaveImage()
@@ -159,13 +167,25 @@ namespace Matrix
             {
                 OpenFileDialog dialog = new OpenFileDialog();
                 dialog.ShowDialog();
-                if (isStreaming)
+                if (!string.IsNullOrEmpty(dialog.FileName))
                 {
-                    img_Dir = dialog.FileName;
-                    PictureBox.Image = Image.FromFile(img_Dir);
+                    try
+                    {
+                        img_Dir = dialog.FileName;
+                        PictureBox.Image = Image.FromFile(img_Dir);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error loading image: {ex.Message}", "Image Load Error");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("File selection canceled.", "Information");
                 }
 
-            }catch(Exception ex )
+            }
+            catch(Exception ex )
             {
                 MessageBox.Show(ex.Message);
             }

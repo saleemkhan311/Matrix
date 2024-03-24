@@ -47,19 +47,26 @@ namespace Matrix
                 {
                     conn.Open();
                     string query = @"SELECT
+                                    (SELECT SUM(Fee_Paid) FROM payment WHERE MONTH(Payment_Date) = MONTH(CURRENT_DATE)) AS Income,
+                                    COALESCE((SELECT SUM(Expense_Amount) FROM expenses WHERE MONTH(Expense_Date) = MONTH(2023-05-10)), 0) AS Expense,
                                     ((SELECT SUM(Fee_Paid) FROM payment WHERE MONTH(Payment_Date) = MONTH(CURRENT_DATE)) - 
-                                     (SELECT SUM(Expense_Amount) FROM expenses WHERE MONTH(Expense_Date) = MONTH(CURRENT_DATE))) AS Revenue;";
+                                     COALESCE((SELECT SUM(Expense_Amount) FROM expenses WHERE MONTH(Expense_Date) = MONTH(2023-05-10)), 0)) AS Revenue;";
 
                     MySqlCommand cmd = new MySqlCommand(query,conn);
                     MySqlDataReader reader = cmd.ExecuteReader();
 
                     while (reader.Read())
                     {
-                        revenue = reader.GetInt32(0);
+                        if (reader.Read())
+                        {
+                            revenue = reader.GetInt32(0);
+                            RevenueLabel.Text = revenue.ToString("C");
+                        }
+                        
                     }
                 }
 
-                RevenueLabel.Text = revenue.ToString("C");
+                
 
             }catch (Exception ex) { MessageBox.Show(ex.Message, "Get Current Revenue"); }
         }
@@ -82,14 +89,16 @@ namespace Matrix
                     MySqlCommand cmd = new MySqlCommand(query, conn);   
 
                     MySqlDataReader reader = cmd.ExecuteReader();
-                    while (reader.Read())
+                    if (reader.Read())
                     {
                         totalFemale = reader.GetInt32(0);
                         totalMale = reader.GetInt32(1);
+
+                        IncomeGentsLabel.Text = totalMale.ToString("C");
+                        IncomeLadiesLabel.Text = totalFemale.ToString("C");
                     }
 
-                    IncomeGentsLabel.Text = totalMale.ToString("C");
-                    IncomeLadiesLabel.Text = totalFemale.ToString("C");
+                    
 
                 }
             }catch (Exception ex) { MessageBox.Show(ex.Message, "GetIncome"); }
@@ -120,14 +129,16 @@ namespace Matrix
                         total = reader.GetInt32(0);
                         male = reader.GetInt32(1);
                         female = reader.GetInt32(2);
+
+                        TotalMembersLabel.Text = total.ToString();
+                        TotalFemaleLabel.Text = female.ToString();
+                        TotalMaleLabel.Text = male.ToString();
                     }
 
                 }
 
               
-                TotalMembersLabel.Text = total.ToString();
-                TotalFemaleLabel.Text = female.ToString();
-                TotalMaleLabel.Text = male.ToString();
+               
             }
             catch (Exception ex)
             {
@@ -142,7 +153,7 @@ namespace Matrix
                 using(MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 { con.Open();
                     int dif = (int)ExpiringBox.Value;
-                    string query = $"SELECT * FROM addmembers WHERE DATEDIFF(Renewal_Date, CURRENT_DATE) >= 0 AND DATEDIFF(Renewal_Date, CURRENT_DATE)<= {dif};";
+                    string query = $"SELECT Member_Name,Renewal_Date,Fee_Paid, Member_phone,Payment_Date FROM addmembers WHERE DATEDIFF(Renewal_Date, CURRENT_DATE) >= 0 AND DATEDIFF(Renewal_Date, CURRENT_DATE)<= {dif};";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
@@ -167,7 +178,7 @@ namespace Matrix
                 using (MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 {
                     con.Open();
-                    string query = "SELECT * FROM addmembers WHERE DATEDIFF(Renewal_Date,CURRENT_DATE) <= 0;";
+                    string query = "SELECT Member_Name,Renewal_Date,Fee_Paid, Member_phone,Payment_Date FROM addmembers WHERE DATEDIFF(Renewal_Date,CURRENT_DATE) <= 0;";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
@@ -192,7 +203,7 @@ namespace Matrix
                 using (MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 {
                     con.Open();
-                    string query = "SELECT * FROM addmembers WHERE Dues >0;";
+                    string query = "SELECT Member_Name,Dues,Fee_Paid, Member_phone,Payment_Date,Renewal_Date FROM addmembers WHERE Dues >0;";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
@@ -234,6 +245,7 @@ namespace Matrix
         {
             GetExpiring();
             ExpiringLabel.Text = $"Members Expiring in {ExpiringBox.Value} days";
+            ExpiringFLabel.Text = $"Members Expiring in {ExpiringBox.Value} days";
         }
     }
 }

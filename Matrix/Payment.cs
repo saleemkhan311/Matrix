@@ -90,11 +90,17 @@ namespace Matrix
             {
                 string x = SearchDate.Value.Date.ToString("yyyy-MM-dd");
 
-                AppSettings.SearchControl("addmembers", "Payment_Date", x, dataTable);
+                AppSettings.SearchControl("payment", "Payment_Date", x, dataTable, true);
             }
             else if (SearchNameRad.Checked)
             {
-                AppSettings.SearchControl("addmembers", "Member_Name", SearchBox.Text, dataTable);
+                AppSettings.SearchControl("payment", "Member_Name", SearchBox.Text, dataTable, false);
+            }
+            else if (SearchMonthRad.Checked)
+            {
+                string x = SearchDate.Value.Date.ToString("yyyy-MM-dd");
+
+                AppSettings.SearchControl("payment", "Month(Payment_Date)", MonthSearchBox.Text, dataTable, true);
             }
 
             if (dataTable.Rows.Count > 0)
@@ -110,8 +116,30 @@ namespace Matrix
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
-            if(SearchBox.Text == string.Empty)
+            /*if (SearchBox.Text == string.Empty)
+            { LoadData(); }
+            else { searchCon(); }*/
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = new MySqlConnection(AppSettings.ConString());
+                con.Open();
+                MySqlCommand cmd;
+                cmd = con.CreateCommand();
+
+                cmd.CommandText = "DELETE FROM payment WHERE ID=@ID;";
+                cmd.Parameters.AddWithValue("@ID", ID);
+                cmd.ExecuteNonQuery();
+                con.Close();
                 LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

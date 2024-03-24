@@ -52,7 +52,7 @@ namespace Matrix
 
                     cmd.ExecuteNonQuery();
                     con.Close();
-
+                    LoadData();
 
                     MessageBox.Show("Data Inserted Successfly", "Caution!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -74,7 +74,7 @@ namespace Matrix
                     MessageBox.Show("Error: " + ex.Message, "Customer Query", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            finally { LoadData(); }
+            finally {}
         }
 
         void LoadData()
@@ -159,6 +159,7 @@ namespace Matrix
                     cmd.Parameters.AddWithValue("@Password", PassBox.Text);
 
                     cmd.ExecuteNonQuery();
+
                     MessageBox.Show("Data Updated Successfully", "Update ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 LoadData();

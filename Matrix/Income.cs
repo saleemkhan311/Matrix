@@ -89,9 +89,9 @@ namespace Matrix
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            QueryDaily();
+            //QueryDaily();
         }
-        private void QueryDaily()
+       /* private void QueryDaily()
         {
             try
             {
@@ -114,12 +114,12 @@ namespace Matrix
             {
                 MessageBox.Show(ex.Message);
             }
-        }
+        }*/
 
-        private void QueryMonthly()
+        /*private void QueryMonthly()
         {
-            /*try
-            {*/
+            *//*try
+            {*//*
                 using (MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 {
                     con.Open();
@@ -135,12 +135,12 @@ namespace Matrix
                     MessageBox.Show("Records Inserted Succesfully");
                     LoadDataMonthly();
                 }
-            /*}
+            *//*}
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }*/
-        }
+            }*//*
+        }*/
 
         private int GetLastID_Daily()
         {
@@ -189,7 +189,7 @@ namespace Matrix
 
         private void AddMonthlyButton_Click(object sender, EventArgs e)
         {
-            QueryMonthly();
+            //QueryMonthly();
         }
 
         private void removeDaily()
@@ -261,7 +261,7 @@ namespace Matrix
 
         private void UpdateDaily()
         {
-            try
+            /*try
             {
                 using (MySqlConnection con = new MySqlConnection(AppSettings.ConString()))
                 {
@@ -283,10 +283,10 @@ namespace Matrix
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
 
-        private void UpdateMonthly()
+        /*private void UpdateMonthly()
         {
             try
             {
@@ -312,15 +312,15 @@ namespace Matrix
             {
                 MessageBox.Show(ex.Message);
             }
-        }
+        }*/
         private void UpdateMonthlyButton_Click(object sender, EventArgs e)
         {
-            UpdateMonthly();
+            //UpdateMonthly();
         }
 
         private void DailyDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
+            /*try
             {
                 Id1 = Convert.ToInt32(DailyDataGrid.SelectedRows[0].Cells[0].Value.ToString());
                 DailyAmountBox.Text = DailyDataGrid.SelectedRows[0].Cells[1].Value.ToString();
@@ -336,12 +336,12 @@ namespace Matrix
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
 
         private void MonthlyDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
+           /* try
             {
                 Id2 = Convert.ToInt32(MonthlyDataGrid.SelectedRows[0].Cells[0].Value.ToString());
                 MonthlyAmountBox.Text = MonthlyDataGrid.SelectedRows[0].Cells[1].Value.ToString();
@@ -358,7 +358,7 @@ namespace Matrix
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
 
         private int DailyIncome()
@@ -409,7 +409,7 @@ namespace Matrix
             return Monthly;
         }
 
-        private void DailyLabel_Click(object sender, EventArgs e)
+        /*private void DailyLabel_Click(object sender, EventArgs e)
         {
             DailyAmountBox.Text = DailyIncome().ToString();
             DailyIncomeDate.Value = DateTime.Now;
@@ -420,7 +420,7 @@ namespace Matrix
             MonthlyAmountBox.Text = MonthlyIncome().ToString();
             MonthBox.Text = DateTime.Now.ToString("MMMM");
             MonthlyIncomeDate.Value = DateTime.Now;
-        }
+        }*/
 
         private void MonthDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
