@@ -75,8 +75,8 @@ namespace Matrix
         {
             int totalMale = 0;
             int totalFemale=0;
-            try
-            {
+            /*try
+            {*/
                 using(MySqlConnection conn = new MySqlConnection(AppSettings.ConString()))
                 {
                     conn.Open();
@@ -91,17 +91,27 @@ namespace Matrix
                     MySqlDataReader reader = cmd.ExecuteReader();
                     if (reader.Read())
                     {
+                    if (!reader.IsDBNull(0))
+                    {
                         totalFemale = reader.GetInt32(0);
-                        totalMale = reader.GetInt32(1);
-
-                        IncomeGentsLabel.Text = totalMale.ToString("C");
                         IncomeLadiesLabel.Text = totalFemale.ToString("C");
                     }
 
+                    if (!reader.IsDBNull(1))
+                    {
+                        totalMale = reader.GetInt32(1);
+                        IncomeGentsLabel.Text = totalMale.ToString("C");
+                    }
+
+                    
+                    
+                }
+
                     
 
-                }
-            }catch (Exception ex) { MessageBox.Show(ex.Message, "GetIncome"); }
+             /*   }
+            }catch (Exception ex) { MessageBox.Show(ex.Message, "GetIncome");*/ 
+            }
         }
 
         private void GetTotalValues()
@@ -246,6 +256,11 @@ namespace Matrix
             GetExpiring();
             ExpiringLabel.Text = $"Members Expiring in {ExpiringBox.Value} days";
             ExpiringFLabel.Text = $"Members Expiring in {ExpiringBox.Value} days";
+        }
+
+        private void bunifuLabel7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

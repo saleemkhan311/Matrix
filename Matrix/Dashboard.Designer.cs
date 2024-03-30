@@ -56,21 +56,27 @@
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.RevenueLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.IncomeLadiesLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.IncomeGentsLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel4 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalMembersLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel5 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalMaleLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel6 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.TotalFemaleLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExpiringDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ExpiredDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.DuesDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -91,18 +97,18 @@
             this.ReminderButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.RefreshButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.FullDataButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.bunifuShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.bunifuShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.bunifuShadowPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuShadowPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.bunifuShadowPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuesDataGrid)).BeginInit();
@@ -111,12 +117,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -155,7 +155,7 @@
             this.RevenueLabel.AutoSize = false;
             this.RevenueLabel.CursorType = null;
             this.RevenueLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.RevenueLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RevenueLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RevenueLabel.Location = new System.Drawing.Point(0, 140);
             this.RevenueLabel.Name = "RevenueLabel";
             this.RevenueLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -171,8 +171,8 @@
             this.bunifuLabel7.AutoEllipsis = false;
             this.bunifuLabel7.AutoSize = false;
             this.bunifuLabel7.CursorType = null;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Bebas", 15.75F);
-            this.bunifuLabel7.Location = new System.Drawing.Point(0, 100);
+            this.bunifuLabel7.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.Location = new System.Drawing.Point(0, 116);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(175, 25);
@@ -180,6 +180,18 @@
             this.bunifuLabel7.Text = "Total Revenue";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel7.Click += new System.EventHandler(this.bunifuLabel7_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::Matrix.Properties.Resources.free_revenue_growth_vector_4qw9z_removebg_preview;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // bunifuShadowPanel2
             // 
@@ -212,7 +224,7 @@
             this.IncomeLadiesLabel.AutoSize = false;
             this.IncomeLadiesLabel.CursorType = null;
             this.IncomeLadiesLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.IncomeLadiesLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncomeLadiesLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncomeLadiesLabel.Location = new System.Drawing.Point(0, 132);
             this.IncomeLadiesLabel.Name = "IncomeLadiesLabel";
             this.IncomeLadiesLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -230,7 +242,7 @@
             this.bunifuLabel13.AutoEllipsis = false;
             this.bunifuLabel13.AutoSize = false;
             this.bunifuLabel13.CursorType = null;
-            this.bunifuLabel13.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel13.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel13.Location = new System.Drawing.Point(0, 85);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -239,6 +251,18 @@
             this.bunifuLabel13.Text = "Income of Current\r\nMonth Ladies";
             this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::Matrix.Properties.Resources.Income_Ladies;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
             // bunifuShadowPanel3
             // 
@@ -272,7 +296,7 @@
             this.bunifuLabel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel5.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel5.Location = new System.Drawing.Point(0, 72);
             this.bunifuLabel5.Name = "bunifuLabel5";
@@ -291,16 +315,27 @@
             this.IncomeGentsLabel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.IncomeGentsLabel.CursorType = null;
             this.IncomeGentsLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.IncomeGentsLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncomeGentsLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncomeGentsLabel.ForeColor = System.Drawing.Color.Black;
             this.IncomeGentsLabel.Location = new System.Drawing.Point(0, 133);
             this.IncomeGentsLabel.Name = "IncomeGentsLabel";
             this.IncomeGentsLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.IncomeGentsLabel.Size = new System.Drawing.Size(175, 32);
             this.IncomeGentsLabel.TabIndex = 1;
-            this.IncomeGentsLabel.Text = "RS2000000.00";
+            this.IncomeGentsLabel.Text = "0";
             this.IncomeGentsLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.IncomeGentsLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::Matrix.Properties.Resources.Expense;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // bunifuShadowPanel4
             // 
@@ -334,7 +369,7 @@
             this.TotalMembersLabel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TotalMembersLabel.CursorType = null;
             this.TotalMembersLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TotalMembersLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalMembersLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalMembersLabel.Location = new System.Drawing.Point(0, 140);
             this.TotalMembersLabel.Name = "TotalMembersLabel";
             this.TotalMembersLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -351,7 +386,7 @@
             this.bunifuLabel4.AutoSize = false;
             this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.Location = new System.Drawing.Point(0, 118);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -360,6 +395,17 @@
             this.bunifuLabel4.Text = "Total Members";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Matrix.Properties.Resources.Group;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // bunifuShadowPanel5
             // 
@@ -392,7 +438,7 @@
             this.TotalMaleLabel.AutoSize = false;
             this.TotalMaleLabel.CursorType = null;
             this.TotalMaleLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TotalMaleLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalMaleLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalMaleLabel.Location = new System.Drawing.Point(0, 140);
             this.TotalMaleLabel.Name = "TotalMaleLabel";
             this.TotalMaleLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -408,7 +454,7 @@
             this.bunifuLabel10.AutoEllipsis = false;
             this.bunifuLabel10.AutoSize = false;
             this.bunifuLabel10.CursorType = null;
-            this.bunifuLabel10.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel10.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel10.Location = new System.Drawing.Point(0, 118);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -417,6 +463,18 @@
             this.bunifuLabel10.Text = "Total Male Members";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Matrix.Properties.Resources.Male;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // bunifuShadowPanel6
             // 
@@ -449,7 +507,7 @@
             this.TotalFemaleLabel.AutoSize = false;
             this.TotalFemaleLabel.CursorType = null;
             this.TotalFemaleLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TotalFemaleLabel.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalFemaleLabel.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalFemaleLabel.Location = new System.Drawing.Point(0, 132);
             this.TotalFemaleLabel.Name = "TotalFemaleLabel";
             this.TotalFemaleLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -462,18 +520,29 @@
             // bunifuLabel8
             // 
             this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.AutoSize = false;
             this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Bebas", 14.25F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(0, 112);
+            this.bunifuLabel8.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.Location = new System.Drawing.Point(8, 107);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(175, 23);
+            this.bunifuLabel8.Size = new System.Drawing.Size(170, 27);
             this.bunifuLabel8.TabIndex = 1;
             this.bunifuLabel8.Text = "Total Female Members";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Matrix.Properties.Resources.female1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(175, 165);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // ExpiringDataGrid
             // 
@@ -530,6 +599,7 @@
             this.ExpiringDataGrid.Location = new System.Drawing.Point(415, 33);
             this.ExpiringDataGrid.Name = "ExpiringDataGrid";
             this.ExpiringDataGrid.RowHeadersVisible = false;
+            this.ExpiringDataGrid.RowHeadersWidth = 51;
             this.ExpiringDataGrid.RowTemplate.Height = 40;
             this.ExpiringDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpiringDataGrid.Size = new System.Drawing.Size(363, 171);
@@ -591,6 +661,7 @@
             this.ExpiredDataGrid.Location = new System.Drawing.Point(415, 248);
             this.ExpiredDataGrid.Name = "ExpiredDataGrid";
             this.ExpiredDataGrid.RowHeadersVisible = false;
+            this.ExpiredDataGrid.RowHeadersWidth = 51;
             this.ExpiredDataGrid.RowTemplate.Height = 40;
             this.ExpiredDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpiredDataGrid.Size = new System.Drawing.Size(363, 171);
@@ -652,6 +723,7 @@
             this.DuesDataGrid.Location = new System.Drawing.Point(415, 448);
             this.DuesDataGrid.Name = "DuesDataGrid";
             this.DuesDataGrid.RowHeadersVisible = false;
+            this.DuesDataGrid.RowHeadersWidth = 51;
             this.DuesDataGrid.RowTemplate.Height = 40;
             this.DuesDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DuesDataGrid.Size = new System.Drawing.Size(363, 171);
@@ -664,11 +736,11 @@
             this.ExpiringLabel.AutoEllipsis = false;
             this.ExpiringLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ExpiringLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.ExpiringLabel.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.ExpiringLabel.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpiringLabel.Location = new System.Drawing.Point(415, 5);
             this.ExpiringLabel.Name = "ExpiringLabel";
             this.ExpiringLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ExpiringLabel.Size = new System.Drawing.Size(208, 25);
+            this.ExpiringLabel.Size = new System.Drawing.Size(179, 24);
             this.ExpiringLabel.TabIndex = 3;
             this.ExpiringLabel.Text = "Members Expiring in 7 days";
             this.ExpiringLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -679,11 +751,11 @@
             this.bunifuLabel2.AllowParentOverrides = false;
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.Location = new System.Drawing.Point(415, 217);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(130, 25);
+            this.bunifuLabel2.Size = new System.Drawing.Size(112, 24);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Expired Members";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -694,11 +766,11 @@
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.Location = new System.Drawing.Point(415, 417);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(148, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(125, 24);
             this.bunifuLabel3.TabIndex = 3;
             this.bunifuLabel3.Text = "Members with dues";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -714,7 +786,7 @@
             this.ExpiringBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpiringBox.Location = new System.Drawing.Point(664, 5);
             this.ExpiringBox.Name = "ExpiringBox";
-            this.ExpiringBox.Size = new System.Drawing.Size(110, 25);
+            this.ExpiringBox.Size = new System.Drawing.Size(110, 29);
             this.ExpiringBox.TabIndex = 6;
             this.ExpiringBox.ValueChanged += new System.EventHandler(this.Expiring_ValueChanged);
             // 
@@ -734,7 +806,7 @@
             this.FullDataPanel.Controls.Add(this.DuesFDataGrid);
             this.FullDataPanel.Controls.Add(this.ExpiredFDataGrid);
             this.FullDataPanel.Controls.Add(this.ExpiringFDataGrid);
-            this.FullDataPanel.Location = new System.Drawing.Point(2, 5);
+            this.FullDataPanel.Location = new System.Drawing.Point(6, 7);
             this.FullDataPanel.Name = "FullDataPanel";
             this.FullDataPanel.ShowBorders = true;
             this.FullDataPanel.Size = new System.Drawing.Size(776, 654);
@@ -804,7 +876,7 @@
             this.ReminderFButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ReminderFButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.ReminderFButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.ReminderFButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderFButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReminderFButton.ForeColor = System.Drawing.Color.White;
             this.ReminderFButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ReminderFButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -869,11 +941,11 @@
             this.bunifuLabel6.AllowParentOverrides = false;
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.Location = new System.Drawing.Point(8, 443);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(148, 25);
+            this.bunifuLabel6.Size = new System.Drawing.Size(161, 28);
             this.bunifuLabel6.TabIndex = 16;
             this.bunifuLabel6.Text = "Members with dues";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -884,11 +956,11 @@
             this.bunifuLabel9.AllowParentOverrides = false;
             this.bunifuLabel9.AutoEllipsis = false;
             this.bunifuLabel9.CursorType = null;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.bunifuLabel9.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel9.Location = new System.Drawing.Point(2, 242);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(130, 25);
+            this.bunifuLabel9.Size = new System.Drawing.Size(143, 28);
             this.bunifuLabel9.TabIndex = 17;
             this.bunifuLabel9.Text = "Expired Members";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -900,11 +972,11 @@
             this.ExpiringFLabel.AutoEllipsis = false;
             this.ExpiringFLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ExpiringFLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.ExpiringFLabel.Font = new System.Drawing.Font("Bebas", 15.75F);
+            this.ExpiringFLabel.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpiringFLabel.Location = new System.Drawing.Point(8, 18);
             this.ExpiringFLabel.Name = "ExpiringFLabel";
             this.ExpiringFLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ExpiringFLabel.Size = new System.Drawing.Size(208, 25);
+            this.ExpiringFLabel.Size = new System.Drawing.Size(228, 28);
             this.ExpiringFLabel.TabIndex = 18;
             this.ExpiringFLabel.Text = "Members Expiring in 7 days";
             this.ExpiringFLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -965,6 +1037,7 @@
             this.DuesFDataGrid.Location = new System.Drawing.Point(8, 474);
             this.DuesFDataGrid.Name = "DuesFDataGrid";
             this.DuesFDataGrid.RowHeadersVisible = false;
+            this.DuesFDataGrid.RowHeadersWidth = 51;
             this.DuesFDataGrid.RowTemplate.Height = 40;
             this.DuesFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DuesFDataGrid.Size = new System.Drawing.Size(766, 171);
@@ -1026,6 +1099,7 @@
             this.ExpiredFDataGrid.Location = new System.Drawing.Point(8, 274);
             this.ExpiredFDataGrid.Name = "ExpiredFDataGrid";
             this.ExpiredFDataGrid.RowHeadersVisible = false;
+            this.ExpiredFDataGrid.RowHeadersWidth = 51;
             this.ExpiredFDataGrid.RowTemplate.Height = 40;
             this.ExpiredFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpiredFDataGrid.Size = new System.Drawing.Size(766, 171);
@@ -1087,6 +1161,7 @@
             this.ExpiringFDataGrid.Location = new System.Drawing.Point(8, 59);
             this.ExpiringFDataGrid.Name = "ExpiringFDataGrid";
             this.ExpiringFDataGrid.RowHeadersVisible = false;
+            this.ExpiringFDataGrid.RowHeadersWidth = 51;
             this.ExpiringFDataGrid.RowTemplate.Height = 40;
             this.ExpiringFDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpiringFDataGrid.Size = new System.Drawing.Size(766, 171);
@@ -1122,7 +1197,7 @@
             this.ReminderButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ReminderButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.ReminderButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.ReminderButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReminderButton.ForeColor = System.Drawing.Color.White;
             this.ReminderButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ReminderButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1211,7 +1286,7 @@
             this.RefreshButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.RefreshButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.RefreshButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.RefreshButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RefreshButton.ForeColor = System.Drawing.Color.White;
             this.RefreshButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RefreshButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1301,7 +1376,7 @@
             this.FullDataButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.FullDataButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.FullDataButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.FullDataButton.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullDataButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullDataButton.ForeColor = System.Drawing.Color.White;
             this.FullDataButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FullDataButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1362,74 +1437,6 @@
             this.FullDataButton.UseDefaultRadiusAndThickness = true;
             this.FullDataButton.Click += new System.EventHandler(this.FullDataButton_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Matrix.Properties.Resources.Male;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Matrix.Properties.Resources.female1;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Matrix.Properties.Resources.Group;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::Matrix.Properties.Resources.Expense;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::Matrix.Properties.Resources.Income_Ladies;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::Matrix.Properties.Resources.free_revenue_growth_vector_4qw9z_removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(175, 165);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1457,11 +1464,18 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.bunifuShadowPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.bunifuShadowPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.bunifuShadowPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.bunifuShadowPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuShadowPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.bunifuShadowPanel6.ResumeLayout(false);
+            this.bunifuShadowPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuesDataGrid)).EndInit();
@@ -1471,12 +1485,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DuesFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiredFDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiringFDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

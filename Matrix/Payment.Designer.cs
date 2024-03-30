@@ -49,11 +49,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.MembershipBox = new System.Windows.Forms.ComboBox();
@@ -76,15 +77,16 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.DeleteButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.MonthSearchBox = new System.Windows.Forms.ComboBox();
+            this.SearchMonthRad = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
             this.SearchButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.RefreshButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.SearchDateRad = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.SearchNameRad = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.SearchDate = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.SearchBox = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.MonthSearchBox = new System.Windows.Forms.ComboBox();
-            this.SearchMonthRad = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.UpdateButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfileBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MembersDataGrid)).BeginInit();
@@ -97,11 +99,11 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Bebas", 18F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.Location = new System.Drawing.Point(13, 20);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(136, 29);
+            this.bunifuLabel1.Size = new System.Drawing.Size(120, 28);
             this.bunifuLabel1.TabIndex = 26;
             this.bunifuLabel1.Text = "Payment Ledger";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -154,9 +156,9 @@
             "Personal Weight Training",
             "Personal Cardio",
             "All Package"});
-            this.MembershipBox.Location = new System.Drawing.Point(587, 65);
+            this.MembershipBox.Location = new System.Drawing.Point(595, 61);
             this.MembershipBox.Name = "MembershipBox";
-            this.MembershipBox.Size = new System.Drawing.Size(153, 33);
+            this.MembershipBox.Size = new System.Drawing.Size(153, 40);
             this.MembershipBox.TabIndex = 11;
             // 
             // GenderBox
@@ -166,9 +168,9 @@
             this.GenderBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderBox.Location = new System.Drawing.Point(328, 68);
+            this.GenderBox.Location = new System.Drawing.Point(330, 64);
             this.GenderBox.Name = "GenderBox";
-            this.GenderBox.Size = new System.Drawing.Size(154, 33);
+            this.GenderBox.Size = new System.Drawing.Size(154, 40);
             this.GenderBox.TabIndex = 11;
             // 
             // PaymentDate
@@ -189,7 +191,7 @@
             this.PaymentDate.IconColor = System.Drawing.Color.Gray;
             this.PaymentDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.PaymentDate.LeftTextMargin = 5;
-            this.PaymentDate.Location = new System.Drawing.Point(328, 164);
+            this.PaymentDate.Location = new System.Drawing.Point(336, 164);
             this.PaymentDate.MinimumSize = new System.Drawing.Size(0, 32);
             this.PaymentDate.Name = "PaymentDate";
             this.PaymentDate.Size = new System.Drawing.Size(220, 32);
@@ -212,7 +214,7 @@
             this.PaidBox.BorderThickness = 1;
             this.PaidBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.PaidBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PaidBox.DefaultFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaidBox.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PaidBox.DefaultText = "";
             this.PaidBox.FillColor = System.Drawing.Color.White;
             this.PaidBox.HideSelection = true;
@@ -222,7 +224,7 @@
             this.PaidBox.IconRight = null;
             this.PaidBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PaidBox.Lines = new string[0];
-            this.PaidBox.Location = new System.Drawing.Point(586, 106);
+            this.PaidBox.Location = new System.Drawing.Point(594, 112);
             this.PaidBox.MaxLength = 32767;
             this.PaidBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.PaidBox.Modified = false;
@@ -258,7 +260,7 @@
             this.PaidBox.SelectionLength = 0;
             this.PaidBox.SelectionStart = 0;
             this.PaidBox.ShortcutsEnabled = true;
-            this.PaidBox.Size = new System.Drawing.Size(154, 46);
+            this.PaidBox.Size = new System.Drawing.Size(154, 42);
             this.PaidBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.PaidBox.TabIndex = 9;
             this.PaidBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -274,11 +276,11 @@
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas", 14.25F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(227, 68);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Location = new System.Drawing.Point(227, 64);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(51, 23);
+            this.bunifuLabel4.Size = new System.Drawing.Size(57, 28);
             this.bunifuLabel4.TabIndex = 3;
             this.bunifuLabel4.Text = "Gender:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -289,11 +291,11 @@
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.Location = new System.Drawing.Point(491, 20);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(89, 23);
+            this.bunifuLabel3.Size = new System.Drawing.Size(99, 28);
             this.bunifuLabel3.TabIndex = 3;
             this.bunifuLabel3.Text = "Father Name:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -304,11 +306,11 @@
             this.bunifuLabel11.AllowParentOverrides = false;
             this.bunifuLabel11.AutoEllipsis = false;
             this.bunifuLabel11.CursorType = null;
-            this.bunifuLabel11.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel11.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel11.Location = new System.Drawing.Point(491, 109);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(57, 23);
+            this.bunifuLabel11.Size = new System.Drawing.Size(63, 28);
             this.bunifuLabel11.TabIndex = 3;
             this.bunifuLabel11.Text = "Fee Paid:";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -319,11 +321,11 @@
             this.bunifuLabel12.AllowParentOverrides = false;
             this.bunifuLabel12.AutoEllipsis = false;
             this.bunifuLabel12.CursorType = null;
-            this.bunifuLabel12.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel12.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel12.Location = new System.Drawing.Point(226, 164);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(96, 23);
+            this.bunifuLabel12.Size = new System.Drawing.Size(107, 28);
             this.bunifuLabel12.TabIndex = 3;
             this.bunifuLabel12.Text = "Payment Date:";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -334,11 +336,11 @@
             this.bunifuLabel8.AllowParentOverrides = false;
             this.bunifuLabel8.AutoEllipsis = false;
             this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Bebas", 14.25F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(227, 109);
+            this.bunifuLabel8.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.Location = new System.Drawing.Point(227, 112);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(70, 23);
+            this.bunifuLabel8.Size = new System.Drawing.Size(77, 28);
             this.bunifuLabel8.TabIndex = 3;
             this.bunifuLabel8.Text = "Phone No.:";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -349,11 +351,11 @@
             this.bunifuLabel6.AllowParentOverrides = false;
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas", 14.25F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(491, 68);
+            this.bunifuLabel6.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.Location = new System.Drawing.Point(491, 64);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(85, 23);
+            this.bunifuLabel6.Size = new System.Drawing.Size(94, 28);
             this.bunifuLabel6.TabIndex = 3;
             this.bunifuLabel6.Text = "Membership:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -365,11 +367,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.Location = new System.Drawing.Point(227, 20);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(72, 23);
+            this.bunifuLabel2.Size = new System.Drawing.Size(80, 28);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Full Name:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -411,7 +413,7 @@
             this.PhoneBox.IconRight = null;
             this.PhoneBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PhoneBox.Lines = new string[0];
-            this.PhoneBox.Location = new System.Drawing.Point(328, 106);
+            this.PhoneBox.Location = new System.Drawing.Point(330, 112);
             this.PhoneBox.MaxLength = 32767;
             this.PhoneBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.PhoneBox.Modified = false;
@@ -485,7 +487,7 @@
             this.FatherBox.IconRight = null;
             this.FatherBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.FatherBox.Lines = new string[0];
-            this.FatherBox.Location = new System.Drawing.Point(586, 15);
+            this.FatherBox.Location = new System.Drawing.Point(594, 15);
             this.FatherBox.MaxLength = 32767;
             this.FatherBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.FatherBox.Modified = false;
@@ -559,7 +561,7 @@
             this.NameBox.IconRight = null;
             this.NameBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.NameBox.Lines = new string[0];
-            this.NameBox.Location = new System.Drawing.Point(328, 15);
+            this.NameBox.Location = new System.Drawing.Point(330, 15);
             this.NameBox.MaxLength = 32767;
             this.NameBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.NameBox.Modified = false;
@@ -669,6 +671,7 @@
             this.MembersDataGrid.Name = "MembersDataGrid";
             this.MembersDataGrid.ReadOnly = true;
             this.MembersDataGrid.RowHeadersVisible = false;
+            this.MembersDataGrid.RowHeadersWidth = 51;
             this.MembersDataGrid.RowTemplate.Height = 40;
             this.MembersDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MembersDataGrid.Size = new System.Drawing.Size(766, 338);
@@ -700,17 +703,17 @@
             this.DeleteButton.ColorContrastOnClick = 45;
             this.DeleteButton.ColorContrastOnHover = 45;
             this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.DeleteButton.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.DeleteButton.CustomizableEdges = borderEdges2;
             this.DeleteButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.DeleteButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.DeleteButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.DeleteButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.DeleteButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.DeleteButton.Font = new System.Drawing.Font("Bebas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
             this.DeleteButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -800,6 +803,63 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(624, 56);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 34;
+            // 
+            // MonthSearchBox
+            // 
+            this.MonthSearchBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MonthSearchBox.FormattingEnabled = true;
+            this.MonthSearchBox.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.MonthSearchBox.Location = new System.Drawing.Point(92, 11);
+            this.MonthSearchBox.Name = "MonthSearchBox";
+            this.MonthSearchBox.Size = new System.Drawing.Size(45, 36);
+            this.MonthSearchBox.TabIndex = 27;
+            // 
+            // SearchMonthRad
+            // 
+            this.SearchMonthRad.AllowBindingControlLocation = false;
+            this.SearchMonthRad.BackColor = System.Drawing.Color.Transparent;
+            this.SearchMonthRad.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
+            this.SearchMonthRad.BorderThickness = 1;
+            this.SearchMonthRad.Checked = false;
+            this.SearchMonthRad.Location = new System.Drawing.Point(65, 18);
+            this.SearchMonthRad.Name = "SearchMonthRad";
+            this.SearchMonthRad.OutlineColor = System.Drawing.Color.DodgerBlue;
+            this.SearchMonthRad.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.SearchMonthRad.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
+            this.SearchMonthRad.RadioColor = System.Drawing.Color.DodgerBlue;
+            this.SearchMonthRad.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.SearchMonthRad.Size = new System.Drawing.Size(21, 21);
+            this.SearchMonthRad.TabIndex = 29;
+            this.SearchMonthRad.TabStop = false;
+            this.SearchMonthRad.Text = null;
+            // 
+            // bunifuLabel15
+            // 
+            this.bunifuLabel15.AllowParentOverrides = false;
+            this.bunifuLabel15.AutoEllipsis = false;
+            this.bunifuLabel15.CursorType = null;
+            this.bunifuLabel15.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel15.Location = new System.Drawing.Point(13, 16);
+            this.bunifuLabel15.Name = "bunifuLabel15";
+            this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel15.Size = new System.Drawing.Size(53, 28);
+            this.bunifuLabel15.TabIndex = 28;
+            this.bunifuLabel15.TabStop = false;
+            this.bunifuLabel15.Text = "Month:";
+            this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // SearchButton
             // 
@@ -897,7 +957,7 @@
             this.SearchNameRad.BackColor = System.Drawing.Color.Transparent;
             this.SearchNameRad.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.SearchNameRad.BorderThickness = 1;
-            this.SearchNameRad.Checked = false;
+            this.SearchNameRad.Checked = true;
             this.SearchNameRad.Location = new System.Drawing.Point(371, 17);
             this.SearchNameRad.Name = "SearchNameRad";
             this.SearchNameRad.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -1008,69 +1068,104 @@
             this.SearchBox.UseSystemPasswordChar = false;
             this.SearchBox.WordWrap = true;
             this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            this.SearchBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchBox_KeyPress);
             // 
-            // MonthSearchBox
+            // UpdateButton
             // 
-            this.MonthSearchBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MonthSearchBox.FormattingEnabled = true;
-            this.MonthSearchBox.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12"});
-            this.MonthSearchBox.Location = new System.Drawing.Point(92, 14);
-            this.MonthSearchBox.Name = "MonthSearchBox";
-            this.MonthSearchBox.Size = new System.Drawing.Size(45, 29);
-            this.MonthSearchBox.TabIndex = 27;
-            // 
-            // SearchMonthRad
-            // 
-            this.SearchMonthRad.AllowBindingControlLocation = false;
-            this.SearchMonthRad.BackColor = System.Drawing.Color.Transparent;
-            this.SearchMonthRad.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
-            this.SearchMonthRad.BorderThickness = 1;
-            this.SearchMonthRad.Checked = true;
-            this.SearchMonthRad.Location = new System.Drawing.Point(65, 18);
-            this.SearchMonthRad.Name = "SearchMonthRad";
-            this.SearchMonthRad.OutlineColor = System.Drawing.Color.DodgerBlue;
-            this.SearchMonthRad.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.SearchMonthRad.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
-            this.SearchMonthRad.RadioColor = System.Drawing.Color.DodgerBlue;
-            this.SearchMonthRad.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.SearchMonthRad.Size = new System.Drawing.Size(21, 21);
-            this.SearchMonthRad.TabIndex = 29;
-            this.SearchMonthRad.TabStop = false;
-            this.SearchMonthRad.Text = null;
-            // 
-            // bunifuLabel15
-            // 
-            this.bunifuLabel15.AllowParentOverrides = false;
-            this.bunifuLabel15.AutoEllipsis = false;
-            this.bunifuLabel15.CursorType = null;
-            this.bunifuLabel15.Font = new System.Drawing.Font("Bebas", 14.25F);
-            this.bunifuLabel15.Location = new System.Drawing.Point(13, 17);
-            this.bunifuLabel15.Name = "bunifuLabel15";
-            this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel15.Size = new System.Drawing.Size(48, 23);
-            this.bunifuLabel15.TabIndex = 28;
-            this.bunifuLabel15.TabStop = false;
-            this.bunifuLabel15.Text = "Month:";
-            this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.UpdateButton.AllowAnimations = true;
+            this.UpdateButton.AllowMouseEffects = true;
+            this.UpdateButton.AllowToggling = false;
+            this.UpdateButton.AnimationSpeed = 200;
+            this.UpdateButton.AutoGenerateColors = false;
+            this.UpdateButton.AutoRoundBorders = false;
+            this.UpdateButton.AutoSizeLeftIcon = true;
+            this.UpdateButton.AutoSizeRightIcon = true;
+            this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
+            this.UpdateButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(0)))));
+            this.UpdateButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UpdateButton.BackgroundImage")));
+            this.UpdateButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.UpdateButton.ButtonText = "Update";
+            this.UpdateButton.ButtonTextMarginLeft = 0;
+            this.UpdateButton.ColorContrastOnClick = 45;
+            this.UpdateButton.ColorContrastOnHover = 45;
+            this.UpdateButton.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.UpdateButton.CustomizableEdges = borderEdges1;
+            this.UpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.UpdateButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.UpdateButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.UpdateButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.UpdateButton.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateButton.ForeColor = System.Drawing.Color.White;
+            this.UpdateButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UpdateButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.UpdateButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.UpdateButton.IconMarginLeft = 11;
+            this.UpdateButton.IconPadding = 10;
+            this.UpdateButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.UpdateButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.UpdateButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.UpdateButton.IconSize = 25;
+            this.UpdateButton.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(0)))));
+            this.UpdateButton.IdleBorderRadius = 15;
+            this.UpdateButton.IdleBorderThickness = 1;
+            this.UpdateButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(0)))));
+            this.UpdateButton.IdleIconLeftImage = null;
+            this.UpdateButton.IdleIconRightImage = null;
+            this.UpdateButton.IndicateFocus = false;
+            this.UpdateButton.Location = new System.Drawing.Point(453, 653);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.UpdateButton.OnDisabledState.BorderRadius = 15;
+            this.UpdateButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.UpdateButton.OnDisabledState.BorderThickness = 1;
+            this.UpdateButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.UpdateButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.UpdateButton.OnDisabledState.IconLeftImage = null;
+            this.UpdateButton.OnDisabledState.IconRightImage = null;
+            this.UpdateButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.UpdateButton.onHoverState.BorderRadius = 15;
+            this.UpdateButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.UpdateButton.onHoverState.BorderThickness = 1;
+            this.UpdateButton.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.UpdateButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.UpdateButton.onHoverState.IconLeftImage = null;
+            this.UpdateButton.onHoverState.IconRightImage = null;
+            this.UpdateButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(0)))));
+            this.UpdateButton.OnIdleState.BorderRadius = 15;
+            this.UpdateButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.UpdateButton.OnIdleState.BorderThickness = 1;
+            this.UpdateButton.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(0)))));
+            this.UpdateButton.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.UpdateButton.OnIdleState.IconLeftImage = null;
+            this.UpdateButton.OnIdleState.IconRightImage = null;
+            this.UpdateButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.UpdateButton.OnPressedState.BorderRadius = 15;
+            this.UpdateButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.UpdateButton.OnPressedState.BorderThickness = 1;
+            this.UpdateButton.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.UpdateButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.UpdateButton.OnPressedState.IconLeftImage = null;
+            this.UpdateButton.OnPressedState.IconRightImage = null;
+            this.UpdateButton.Size = new System.Drawing.Size(150, 39);
+            this.UpdateButton.TabIndex = 35;
+            this.UpdateButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UpdateButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UpdateButton.TextMarginLeft = 0;
+            this.UpdateButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.UpdateButton.UseDefaultRadiusAndThickness = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // Payment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(790, 700);
+            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.bunifuShadowPanel2);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.bunifuShadowPanel1);
@@ -1124,5 +1219,6 @@
         private System.Windows.Forms.ComboBox MonthSearchBox;
         private Bunifu.UI.WinForms.BunifuRadioButton SearchMonthRad;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton UpdateButton;
     }
 }

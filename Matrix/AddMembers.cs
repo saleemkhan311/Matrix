@@ -74,7 +74,7 @@ namespace Matrix
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "INSERT INTO addmembers(ID, Member_Name, Member_Father_Name, Member_phone,Gender,Weight,Membership_type,Fee_Paid,Dues,Payment_Date,Renewal_Date,Addmission_Date,PaymentType,Description,Image_Dir,receivedby) VALUES (@ID,@Member_Name,@Member_Father_Name,@Member_phone,@Gender,@Weight,@Membership_type,@Fee_Paid,@Dues,@Payment_Date,@Renewal_Date,@Addmission_Date,@PaymentType,@Description,@Image_Dir,@receivedby);";
+                cmd.CommandText = "INSERT INTO addmembers(ID, Member_Name, Member_Father_Name, Member_phone,Gender,Weight,Membership_type,Fee_Paid,Dues,Payment_Date,Renewal_Date,Addmission_Date,Payment_Type,Description,Image_Dir,receivedby) VALUES (@ID,@Member_Name,@Member_Father_Name,@Member_phone,@Gender,@Weight,@Membership_type,@Fee_Paid,@Dues,@Payment_Date,@Renewal_Date,@Addmission_Date,@Payment_Type,@Description,@Image_Dir,@receivedby);";
 
                 cmd.Parameters.AddWithValue("@ID", (GetLastID()+1));
                 cmd.Parameters.AddWithValue("@Member_Name", NameBox.Text);
@@ -85,7 +85,7 @@ namespace Matrix
                 cmd.Parameters.AddWithValue("@Membership_type", MembershipBox.Text);
                 cmd.Parameters.AddWithValue("@Fee_Paid", PaidBox.Text);
                 cmd.Parameters.AddWithValue("@Dues", DuesBox.Text);
-                cmd.Parameters.AddWithValue("@PaymentType", PaymentType.Text);
+                cmd.Parameters.AddWithValue("@Payment_Type", PaymentType.Text);
                 cmd.Parameters.AddWithValue("@Description", Description.Text);
                 cmd.Parameters.AddWithValue("@Payment_Date", PaymentDate.Value);
                 cmd.Parameters.AddWithValue("@Renewal_Date", RenewalDate.Value);
@@ -146,7 +146,7 @@ namespace Matrix
                 cmd.Parameters.AddWithValue("@Membership_type", MembershipBox.Text);
                 cmd.Parameters.AddWithValue("@Fee_Paid", PaidBox.Text);
                 cmd.Parameters.AddWithValue("@Payment_Date", PaymentDate.Value);
-                cmd.Parameters.AddWithValue("@PaymentType", PaymentType.Text);
+                cmd.Parameters.AddWithValue("@Payment_Type", PaymentType.Text);
                 cmd.Parameters.AddWithValue("@Description", Description.Text);
                 cmd.Parameters.AddWithValue("@receivedby", LoginPage.username);
                 cmd.Parameters.AddWithValue("@Image_Dir", img_Dir);

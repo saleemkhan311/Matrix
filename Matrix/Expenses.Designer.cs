@@ -51,6 +51,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.ExpenseTypeBox = new System.Windows.Forms.ComboBox();
             this.ExpenseDate = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -66,7 +67,6 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.ClearButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.UpdateButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.ExpenseTypeBox = new System.Windows.Forms.ComboBox();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpenseDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -107,6 +107,22 @@
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             // 
+            // ExpenseTypeBox
+            // 
+            this.ExpenseTypeBox.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpenseTypeBox.FormattingEnabled = true;
+            this.ExpenseTypeBox.Items.AddRange(new object[] {
+            "Personal Expense",
+            "Office Expense",
+            "Employee Salary",
+            "Equipment Expense",
+            "Repair Expense",
+            "Other Expense"});
+            this.ExpenseTypeBox.Location = new System.Drawing.Point(141, 90);
+            this.ExpenseTypeBox.Name = "ExpenseTypeBox";
+            this.ExpenseTypeBox.Size = new System.Drawing.Size(154, 40);
+            this.ExpenseTypeBox.TabIndex = 27;
+            // 
             // ExpenseDate
             // 
             this.ExpenseDate.BackColor = System.Drawing.Color.Transparent;
@@ -125,7 +141,7 @@
             this.ExpenseDate.IconColor = System.Drawing.Color.Gray;
             this.ExpenseDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.ExpenseDate.LeftTextMargin = 5;
-            this.ExpenseDate.Location = new System.Drawing.Point(133, 198);
+            this.ExpenseDate.Location = new System.Drawing.Point(141, 198);
             this.ExpenseDate.MinimumSize = new System.Drawing.Size(0, 32);
             this.ExpenseDate.Name = "ExpenseDate";
             this.ExpenseDate.Size = new System.Drawing.Size(220, 32);
@@ -136,11 +152,11 @@
             this.bunifuLabel12.AllowParentOverrides = false;
             this.bunifuLabel12.AutoEllipsis = false;
             this.bunifuLabel12.CursorType = null;
-            this.bunifuLabel12.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel12.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel12.Location = new System.Drawing.Point(28, 198);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(96, 23);
+            this.bunifuLabel12.Size = new System.Drawing.Size(107, 28);
             this.bunifuLabel12.TabIndex = 11;
             this.bunifuLabel12.Text = "Payment Date:";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -151,11 +167,11 @@
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.Location = new System.Drawing.Point(32, 90);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(92, 23);
+            this.bunifuLabel4.Size = new System.Drawing.Size(103, 28);
             this.bunifuLabel4.TabIndex = 7;
             this.bunifuLabel4.Text = "Expense Type:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -166,11 +182,11 @@
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.Location = new System.Drawing.Point(349, 42);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(83, 23);
+            this.bunifuLabel1.Size = new System.Drawing.Size(92, 28);
             this.bunifuLabel1.TabIndex = 8;
             this.bunifuLabel1.Text = "Description:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -181,11 +197,11 @@
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.Location = new System.Drawing.Point(32, 140);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(55, 23);
+            this.bunifuLabel3.Size = new System.Drawing.Size(61, 28);
             this.bunifuLabel3.TabIndex = 8;
             this.bunifuLabel3.Text = "Amount:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -197,11 +213,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas", 14.25F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Bebas Neue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.Location = new System.Drawing.Point(32, 42);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(90, 23);
+            this.bunifuLabel2.Size = new System.Drawing.Size(100, 28);
             this.bunifuLabel2.TabIndex = 9;
             this.bunifuLabel2.Text = "Expnes Name:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -308,7 +324,7 @@
             this.AmountBox.IconRight = null;
             this.AmountBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AmountBox.Lines = new string[0];
-            this.AmountBox.Location = new System.Drawing.Point(133, 140);
+            this.AmountBox.Location = new System.Drawing.Point(141, 140);
             this.AmountBox.MaxLength = 32767;
             this.AmountBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.AmountBox.Modified = false;
@@ -382,7 +398,7 @@
             this.NameBox.IconRight = null;
             this.NameBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.NameBox.Lines = new string[0];
-            this.NameBox.Location = new System.Drawing.Point(133, 37);
+            this.NameBox.Location = new System.Drawing.Point(141, 42);
             this.NameBox.MaxLength = 32767;
             this.NameBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.NameBox.Modified = false;
@@ -487,6 +503,7 @@
             this.ExpenseDataGrid.Name = "ExpenseDataGrid";
             this.ExpenseDataGrid.ReadOnly = true;
             this.ExpenseDataGrid.RowHeadersVisible = false;
+            this.ExpenseDataGrid.RowHeadersWidth = 51;
             this.ExpenseDataGrid.RowTemplate.Height = 40;
             this.ExpenseDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpenseDataGrid.Size = new System.Drawing.Size(738, 346);
@@ -684,7 +701,7 @@
             this.bunifuLabel5.Location = new System.Drawing.Point(28, 12);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(137, 29);
+            this.bunifuLabel5.Size = new System.Drawing.Size(174, 36);
             this.bunifuLabel5.TabIndex = 27;
             this.bunifuLabel5.Text = "Expense Details";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -869,22 +886,6 @@
             this.UpdateButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.UpdateButton.UseDefaultRadiusAndThickness = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
-            // ExpenseTypeBox
-            // 
-            this.ExpenseTypeBox.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseTypeBox.FormattingEnabled = true;
-            this.ExpenseTypeBox.Items.AddRange(new object[] {
-            "Personal Expense",
-            "Office Expense",
-            "Employee Salary",
-            "Equipment Expense",
-            "Repair Expense",
-            "Other Expense"});
-            this.ExpenseTypeBox.Location = new System.Drawing.Point(133, 90);
-            this.ExpenseTypeBox.Name = "ExpenseTypeBox";
-            this.ExpenseTypeBox.Size = new System.Drawing.Size(154, 33);
-            this.ExpenseTypeBox.TabIndex = 27;
             // 
             // Expenses
             // 

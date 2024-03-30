@@ -128,7 +128,7 @@ namespace Matrix
                 con.Open();
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
-                cmd.CommandText = "UPDATE addmembers SET ID=@ID, Member_Name=@Member_Name, Member_Father_Name=@Member_Father_Name, Member_phone=@Member_phone,Gender=@Gender,Weight=@Weight,Membership_type=@Membership_type,Fee_Paid=@Fee_Paid,Dues=@Dues,Payment_Date=@Payment_Date,Renewal_Date=@Renewal_Date,Addmission_Date=@Addmission_Date,PaymentType=@PaymentType,Description=@Description,Image_Dir=@Image_Dir WHERE ID= @ID;";
+                cmd.CommandText = "UPDATE addmembers SET ID=@ID, Member_Name=@Member_Name, Member_Father_Name=@Member_Father_Name, Member_phone=@Member_phone,Gender=@Gender,Weight=@Weight,Membership_type=@Membership_type,Fee_Paid=@Fee_Paid,Dues=@Dues,Payment_Date=@Payment_Date,Renewal_Date=@Renewal_Date,Addmission_Date=@Addmission_Date,Payment_Type=@Payment_Type,Description=@Description,Image_Dir=@Image_Dir WHERE ID= @ID;";
                 cmd.Parameters.AddWithValue("@ID", ID);
                 cmd.Parameters.AddWithValue("@Member_Name", NameBox.Text);
                 cmd.Parameters.AddWithValue("@Member_Father_Name", FatherBox.Text);
@@ -141,7 +141,7 @@ namespace Matrix
                 cmd.Parameters.AddWithValue("@Dues", DuesBox.Text);
                 cmd.Parameters.AddWithValue("@Payment_Date", PaymentDate.Value);
                 cmd.Parameters.AddWithValue("@Renewal_Date", RenewalDate.Value);
-                cmd.Parameters.AddWithValue("@PaymentType", PaymentType.Text);
+                cmd.Parameters.AddWithValue("@Payment_Type", PaymentType.Text);
                 cmd.Parameters.AddWithValue("@Description", Description.Text);
                 cmd.Parameters.AddWithValue("@Addmission_Date", AddmissionDate.Value);
                 cmd.Parameters.AddWithValue("@Image_Dir", img_Dir);
@@ -316,6 +316,24 @@ namespace Matrix
         private void SearchDate_ValueChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && !string.IsNullOrWhiteSpace(SearchBox.Text))
+            {
+                searchCon();
+            }
+        }
+
+        private void PaymentDate_ValueChanged(object sender, EventArgs e)
+        {
+            RenewalDate.Value = PaymentDate.Value.AddMonths(1);
         }
     }
 }

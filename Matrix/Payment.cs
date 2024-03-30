@@ -141,5 +141,40 @@ namespace Matrix
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection con = new MySqlConnection(AppSettings.ConString());
+                con.Open();
+                MySqlCommand cmd;
+                cmd = con.CreateCommand();
+                cmd.CommandText = "UPDATE payment SET ID=@ID, Member_Name=@Member_Name, Member_Father=@Member_Father, Gender=@Gender,Membership_type=@Membership_type,Fee_Paid=@Fee_Paid,Payment_Date=@Payment_Date WHERE ID= @ID;";
+                cmd.Parameters.AddWithValue("@ID", ID);
+                cmd.Parameters.AddWithValue("@Member_Name", NameBox.Text);
+                cmd.Parameters.AddWithValue("@Member_Father", FatherBox.Text);
+                cmd.Parameters.AddWithValue("@Member_Phone", PhoneBox.Text);
+                cmd.Parameters.AddWithValue("@Gender", GenderBox.Text);
+                cmd.Parameters.AddWithValue("@Membership_type", MembershipBox.Text);
+                cmd.Parameters.AddWithValue("@Fee_Paid", PaidBox.Text);
+                cmd.Parameters.AddWithValue("@Payment_Date", PaymentDate.Value);
+                cmd.ExecuteNonQuery();
+                LoadData();
+                MessageBox.Show("Data Updated Succesfully");
+        }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Update");
+            }
+}
+
+        private void SearchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && !string.IsNullOrWhiteSpace(SearchBox.Text))
+            {
+                searchCon();
+            }
+        }
     }
 }
